@@ -1,5 +1,3 @@
-# herointene.github.io
-Personal website
 
 
 # The Train To WU KAI SHA
