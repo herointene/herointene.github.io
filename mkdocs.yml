@@ -1,0 +1,53 @@
+site_name: TedWUeb
+site_url: https://tedwueb.org
+
+
+nav:
+  - Home: index.md
+  - Tech Talk:
+      none
+  - Tap Water:
+    - Preface: Poems/preface.md
+    - Chapter I: Poems/giveme7cupsofwater.md
+  - mini Ted Talk:
+      none
+  - Tedartist:
+      none
+  - About: about.md
+
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+  font: 
+    text: Noto Serif SC
+  palette:
+    - scheme: default
+      primary: blue grey
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - scheme: slate
+      primary: black
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+    
+
+
+
+markdown_extensions:
+  - footnotes
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+copyright: Copyright &copy; 2021 Ted WU
+
+extra:
+  generator: false

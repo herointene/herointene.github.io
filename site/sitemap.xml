@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://tedwueb.org/</loc>
+         <lastmod>2021-10-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tedwueb.org/about/</loc>
+         <lastmod>2021-10-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tedwueb.org/poems/giveme7cupsofwater/</loc>
+         <lastmod>2021-10-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tedwueb.org/poems/preface/</loc>
+         <lastmod>2021-10-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tedwueb.org/talk/</loc>
+         <lastmod>2021-10-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tedwueb.org/tech/</loc>
+         <lastmod>2021-10-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+</urlset>
