@@ -1,18 +1,21 @@
 site_name: TedWUeb
 
 
-
 nav:
   - Home: index.md
   - Tech Talk:
-      none: tech/index.md
+      爬取steam游戲榜單: tech/steam-crawling-python.md
+      爬取校招網招聘信息: tech/recruitment2021-crawling-python.md
   - Tap Water:
     - Preface: poems/preface.md
-    - Chapter I: poems/giveme7cupsofwater.md
+    - Chapter I: 
+        再來七杯自來水: poems/giveme7cupsofwater.md
+        Celeste: poems/celeste.md
   - mini Ted Talk:
       none: talk/index.md
-      
+
   - About: about.md
+
 
 
 theme:
