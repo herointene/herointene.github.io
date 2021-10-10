@@ -3,7 +3,8 @@ name: gh-deploy
 on:
   push:
     branches:
-      - gh-pages
+      - master
+      - main
 
 jobs:
   deploy:
