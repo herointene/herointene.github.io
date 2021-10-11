@@ -18,3 +18,4 @@ record my site prgress of each working day
 - uploaded 1 tech files, 1 poems, 1 talks
 - updated Home page, created websitelog page
 - markdown link test
+- error on gh action, finding
