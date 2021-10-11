@@ -3,7 +3,6 @@
 !!! bug
     正在從其他平臺搬運文章，下面所有的圖片均無法顯示，正在尋找圖床中……
 
-![在‘喝醉的龙猫’wechat订阅号回复“校招”即可领取本文提到的最新excel文档与python源码的网盘链接](https://upload-images.jianshu.io/upload_images/24101260-4a452bd50fe9bd91?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ###前言
 又到毕业季，大家开始为找工作而忙碌起来。加上疫情的原因，今年的校招可能是近几年竞争最激烈的一次。
