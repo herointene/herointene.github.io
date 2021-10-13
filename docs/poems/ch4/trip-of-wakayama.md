@@ -54,4 +54,4 @@
 
 ---
 
-關於此文的後記，一同上載于艇仔粥的mini Ted Talk欄目：[關於選擇](../../talk/about-life-choose.md)
+關於此文的後記，一同上載于艇仔粥的mini Ted Talk欄目：[關於選擇](../../talk/about-life-choices.md)

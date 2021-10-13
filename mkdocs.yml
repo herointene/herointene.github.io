@@ -15,8 +15,10 @@ nav:
         Celeste: poems/ch1/celeste.md
     - Chapter IV:
         和歌山之旅: poems/ch4/trip-of-wakayama.md
+        奧克蘭的初夏: poems/ch4/trip-of-auckland.md
   - mini Ted Talk:
-      關於選擇: talk/about-life-choose.md
+      關於選擇: talk/about-life-choices.md
+      狩月人: talk/moon-hunter.md
 
   - About: about.md
   - 建站日志: mis/websitelog.md 
@@ -25,6 +27,7 @@ nav:
 
 theme:
   name: material
+  logo: assets/logo.png
   language: zh
   features:
     - navigation.tabs
@@ -37,11 +40,13 @@ theme:
   palette:
     - scheme: default
       primary: blue grey
+      accent: indigo
       toggle:
         icon: material/weather-sunny
         name: Switch to dark mode
     - scheme: slate
       primary: black
+      accent: indigo
       toggle:
         icon: material/weather-night
         name: Switch to light mode
@@ -50,8 +55,11 @@ theme:
 
 
 markdown_extensions:
-  - footnotes
+  
   - admonition
+  - attr_list
+  - footnotes
+  - meta
   - pymdownx.details
   - pymdownx.superfences
 
@@ -59,3 +67,7 @@ copyright: Copyright &copy; 2021 Ted WU
 
 extra:
   generator: false
+  homepage: https://herointene.github.io
+
+extra_css:
+  - stylesheets/extra.css
