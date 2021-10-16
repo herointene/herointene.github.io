@@ -3,6 +3,7 @@ site_name: 艇仔粥
 
 nav:
   - Home: index.md
+  - 丨: mis/blankpage.md
   - Tech Talk:
       爬行動物:
         爬取steam游戲榜單: tech/steam-crawling-python.md
@@ -18,7 +19,9 @@ nav:
         奧克蘭的初夏: poems/ch4/trip-of-auckland.md
   - mini Ted Talk:
       關於選擇: talk/about-life-choices.md
+      向流星許願: talk/grant-wishes.md
       狩月人: talk/moon-hunter.md
+      電子湯圓: talk/digital-sweetdumpling.md
 
   - About: about.md
   - 建站日志: mis/websitelog.md 
@@ -40,13 +43,13 @@ theme:
   palette:
     - scheme: default
       primary: blue grey
-      accent: indigo
+      
       toggle:
         icon: material/weather-sunny
         name: Switch to dark mode
     - scheme: slate
       primary: black
-      accent: indigo
+      
       toggle:
         icon: material/weather-night
         name: Switch to light mode
@@ -66,7 +69,6 @@ markdown_extensions:
 copyright: Copyright &copy; 2021 Ted WU
 
 extra:
-  generator: false
   homepage: https://herointene.github.io
 
 extra_css:

@@ -27,7 +27,7 @@ hide:
 </div>
 
 
-[Have a nice day! ](tech/steam-crawling-python/){ .md-button .center} 
+[來去看看](tech/steam-crawling-python/){ .md-button .center} 
 
 
 <div class = "a">

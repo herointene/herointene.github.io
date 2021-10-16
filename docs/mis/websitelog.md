@@ -1,6 +1,6 @@
 # websitelog
 
-record my site prgress of each working day
+my site prgress of each working day
 
 ## 2021
 
@@ -27,3 +27,9 @@ record my site prgress of each working day
 - changed site logo
 - redesigned Home page, with CSS formating
 - CSS config
+
+### OCT 16
+
+- modified some pages
+- added a blank page
+- uploaded 2 talks

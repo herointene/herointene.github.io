@@ -1,9 +1,18 @@
+:root{
+  --md-accent-fg-color: #90A4AE;
+
+}
+
+
+
+
+
 .center {
   display: block;
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: 20%;
+  margin-right: 20%;
   text-align: center;
-  width: 50%;
+  width: 60%;
 }
 
 div.a {
@@ -12,4 +21,58 @@ div.a {
 
 div.d {
   text-align: justify;
+}
+
+
+.header {
+  padding: 60px;
+  text-align: right;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
+
+
+/*For HOMEPAGE*/
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
