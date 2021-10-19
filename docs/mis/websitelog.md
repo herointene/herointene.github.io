@@ -15,7 +15,7 @@ my site prgress of each working day
 ### OCT 11
 
 - renamed Website to "ting zai zuk"
-- uploaded 1 tech files, 1 poems, 1 talks
+- uploaded 1 tech, 1 poem, 1 talk
 - updated Home page, created websitelog page
 - markdown link test
 - error on gh action, finding
@@ -23,7 +23,7 @@ my site prgress of each working day
 ### OCT 13
 
 - resolved bug
-- uploaded 1 poems, 1 talks
+- uploaded 1 poem, 1 talk
 - changed site logo
 - redesigned Home page, with CSS formating
 - CSS config
@@ -33,3 +33,14 @@ my site prgress of each working day
 - modified some pages
 - added a blank page
 - uploaded 2 talks
+
+### OCT 19
+
+- uploaded 1 tech, 1 poem
+- updated preface of Tap Water
+
+### OCT 21
+
+- uploaded 6 poems
+- correction of typo
+- testing text font for Apple OS (Index Head)

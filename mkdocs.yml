@@ -9,14 +9,25 @@ nav:
         爬取steam游戲榜單: tech/steam-crawling-python.md
         爬取校招網招聘信息: tech/recruitment2021-crawling-python.md
         爬取豆瓣帖子: tech/douban-crawling-python.md 
+      突發奇想:
+        語音助手與天氣: tech/analytics-weather.md
   - Tap Water:
     - Preface: poems/preface.md
     - Chapter I: 
         再來七杯自來水: poems/ch1/tap-water.md
         Celeste: poems/ch1/celeste.md
+        魚腸: poems/ch1/fishsausage.md
     - Chapter IV:
         和歌山之旅: poems/ch4/trip-of-wakayama.md
         奧克蘭的初夏: poems/ch4/trip-of-auckland.md
+        Wu Kai Sha: poems/ch4/wukaisha.md 
+    - Chapter VI:
+        音符: poems/ch6/note.md
+        宇宙飛船: poems/ch6/spaceship.md
+        Untitled: poems/ch6/Untitled.md
+    - Chapter VII:
+        緊急想念: poems/ch7/urgently-miss.md
+        不可抗力: poems/ch7/force-majeure.md
   - mini Ted Talk:
       關於選擇: talk/about-life-choices.md
       向流星許願: talk/grant-wishes.md
@@ -38,8 +49,7 @@ theme:
     - navigation.expand
     - navigation.top
 
-  font: 
-    text: Noto Serif SC
+  
   palette:
     - scheme: default
       primary: blue grey
@@ -65,6 +75,7 @@ markdown_extensions:
   - meta
   - pymdownx.details
   - pymdownx.superfences
+
 
 copyright: Copyright &copy; 2021 Ted WU
 
