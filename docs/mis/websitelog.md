@@ -44,3 +44,9 @@ my site prgress of each working day
 - uploaded 6 poems
 - correction of typo
 - testing text font for Apple OS (Index Head)
+
+
+### NOV 1
+
+- Redesigned Homepage (NEW!@v0.99) (one week workload)
+- correction of typo
