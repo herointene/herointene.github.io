@@ -1,11 +1,9 @@
 # 夏日狂欢：用Python爬取Steam排行榜一万个游戏
 
-!!! bug
-    正在從其他平臺搬運文章，下面所有的圖片均無法顯示，正在尋找圖床中……
 
 ### 前言
 
-![虽然夏日狂欢已过，但知识还是要学起来呐](https://upload-images.jianshu.io/upload_images/24101260-1890894c0a325bfe?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![1](img\steam\1.png)
 
 有时候滚动steam的排行榜看自己喜欢的游戏的时候，未免会被右边的价格影响到。久而久之我发现我所不想买的游戏并不是因为它不好玩，而是它还没打折。又或者有些心水未被别人挖掘，在排行榜隐秘的角落里自怨自艾，等待“把玩”它的人出现~
 
@@ -19,14 +17,20 @@
 第三，但就因为没有进入每个游戏的链接，所以像评论，简介，开发商等信息就没有爬取。但爬取游戏链接的爬虫攻略网上也有很多，这里就不弄斧了。
 
 首先，进入官网的排行榜页面，为了避免游戏DLC、bundle等影响后期操作的类型出现，记得在右边的过滤器里只勾选游戏类目。
-![](https://upload-images.jianshu.io/upload_images/24101260-3943e20a0a13bd9d?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![2](img\steam\2.png)
 
 通过后台的XHR发现，页面每次刷新都只显示前50个游戏，当我们滚动页面往下看时，网站会发送一个神秘代码：
-![](https://upload-images.jianshu.io/upload_images/24101260-8b233dfcbf4c8df8?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![](img\steam\3.png)
+
 经过观察，我发现代码会自动申请返回从start参数的数字开始，一共count参数的数字的游戏信息。比如，下面的图显示它申请了从第51个到100个总共50个游戏的信息。
-![](https://upload-images.jianshu.io/upload_images/24101260-ac2c56365bbb89e6?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![](img\steam\4.png)
+
 双击上上图的红框链接，返回的页面长这样：
-![](https://upload-images.jianshu.io/upload_images/24101260-cc611bd76f6d22d9?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![](img\steam\5.png)
+
 所谓json格式，其实就是在字典里夹字典或者列表，目前许多大数据都是这样保存滴。所以在查询的时候其实很方便，但是我在抽取信息的时候还是会用到正则表达式，因为会方便很多。
 
 知道这些之后，剩下的就可以用python一个个有用信息抽取出来，组成一个新的Dataframe列表，以便之后保存为csv格式。
@@ -50,17 +54,24 @@ soup = BeautifulSoup(jsontext['results_html'],'html.parser')
 可以看看soup返回的结果，它显示了json里边'results_html'返回的东西，因为前边的内容我们已经不需要了，所有游戏信息都在这个键里边。
 
 接着我们回到那个json页面看看我们想要的东西都藏在哪：
-游戏名字藏在span的title class里：![](https://upload-images.jianshu.io/upload_images/24101260-441fa6a8eba459ad?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+游戏名字藏在span的title class里：
+
+![](img\steam\6.png)
 
 ```python
 name = soup.find_all('span',class_ ='title')
 ```
-出版日期藏在div的另一个class里：![](https://upload-images.jianshu.io/upload_images/24101260-29a1548caacada98?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+出版日期藏在div的另一个class里：
+
+![](img\steam\7.png)
 
 ```python
 listdate = soup.find_all('div', class_ ='col search_released responsive_secondrow')
 ```
-评分和打分人数藏在span标签里，如果用字典查找的话会比较麻烦，所以我们稍后使用正则表达式将他俩提取出来：![](https://upload-images.jianshu.io/upload_images/24101260-34f40bb220c15cdb?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+评分和打分人数藏在span标签里，如果用字典查找的话会比较麻烦，所以我们稍后使用正则表达式将他俩提取出来：
+
+![](img\steam\8.png)
+
 不幸运的是，有些游戏因为还没上架，所以没有人评论，我们用正则表达式得到的信息是乱码。所以我们用函数来防止出现乱码的可能性：
 ```python
 def get_reviewscore(review):
@@ -85,7 +96,10 @@ def get_reviewers(review):
 ```
 如果看到这里的读者觉得很轻松，那我便可以继续往下述说，因为爬取价格比评论更加麻烦。但仅限于麻烦，并没有很高大上的操作；而我相信我并不是用聪明的方法爬取到想要的结果，因为对于这个体量的数据再优化的代码对于运行时间来说相差不大。反正结果都一样，管他呢。
 
-其实要找物品的最终价格（即免费游戏，打折后或未打折的游戏价格）非常简单，因为他就藏在这里：![](https://upload-images.jianshu.io/upload_images/24101260-86a0d26a01638766?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+其实要找物品的最终价格（即免费游戏，打折后或未打折的游戏价格）非常简单，因为他就藏在这里：
+
+![](img\steam\9.png)
+
 默认后边两位为小数点后两位，所以我们直接把这串数字揪出来并除以100：
 ```python
 def get_finalprice(price):
@@ -98,16 +112,27 @@ def get_finalprice(price):
 但我们如果就想知道他的原价，以便之后做分析该怎么办呢？
 
 先看一下steam排行榜上的价格有三种显示方法：
-![这张图涵盖了价格的三种显示方法](https://upload-images.jianshu.io/upload_images/24101260-353460e5703739a1?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-第一种，带有划线价格的打折商品，在源代码中长这样：![](https://upload-images.jianshu.io/upload_images/24101260-4321b5f8fe98a177?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-第二种，免费的：![](https://upload-images.jianshu.io/upload_images/24101260-d31dbeb5f50b4c8a?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-头疼的是，免费的标识也有变体：![](https://upload-images.jianshu.io/upload_images/24101260-a6ede5f371b41abb?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-![](https://upload-images.jianshu.io/upload_images/24101260-ee881e7de912c3e0?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-![连to的大小写也有不一样的……steam您用点心！](https://upload-images.jianshu.io/upload_images/24101260-68d218e7e70a41f9?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![这张图涵盖了价格的三种显示方法](img\steam\91.png)
+
+第一种，带有划线价格的打折商品，在源代码中长这样：
+![](img\steam\91-1.png)
+
+第二种，免费的：
+![](img\steam\92.png)
+
+头疼的是，免费的标识也有变体：
+![](img\steam\93.png)
+
+![](img\steam\94.png)
+
+![连to的大小写也有不一样的……steam您用点心！](img\steam\95.png)
 
 不过Free还是老老实实在最前面，所以我们后边只要找到Free就好啦。
 
-第三种，原价显示：![](https://upload-images.jianshu.io/upload_images/24101260-3d07caed6b441e20?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+第三种，原价显示：
+![](img\steam\96.png)
+
 上面的图片都是我在抽查的时候发现的规律与变形，为了避免后续几千个游戏有“乌合之众”，我在代码里只查找这三种格式，如果有奇形怪状的数据出现，直接一棍子打成“空值”：
 ```python
 def get_price(price):
@@ -193,17 +218,28 @@ df = pd.DataFrame(data=[gamename,gamereview,gamereviewers,gamerelease,oriprice,f
 #呼叫我们的函数：
 df = get_data(10000) #这里的数字代表爬取10000个游戏
 ```
-等待漫长的过程与欣赏成功的过程：![快好啦](https://upload-images.jianshu.io/upload_images/24101260-ce0ee9689149a116?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-最后的数据集长这样：![](https://upload-images.jianshu.io/upload_images/24101260-ce730a7a5d0980b1?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+等待漫长的过程与欣赏成功的过程：
+
+![快好啦](img\steam\97.png)
+
+最后的数据集长这样：
+
+![](img\steam\98.png)
+
 
 ---
 ### 总结与反思
 一
 
 我发现final_price也就是一开始提取的最终价格中，会有高于原价的现象。
-比如CS：GO的最终价格并不是0，是因为它有一个升级包：![](https://upload-images.jianshu.io/upload_images/24101260-a3a8eb811b8c5e96?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+比如CS：GO的最终价格并不是0，是因为它有一个升级包：
 
-前1000个游戏里总共有3个这样的错误：![](https://upload-images.jianshu.io/upload_images/24101260-882344b083ef7fc5?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](img\steam\99.png)
+
+前1000个游戏里总共有3个这样的错误：
+
+![](img\steam\991.png)
+
 实况足球2020 是demo版免费，而想体验完整游戏确实需要78港币；
 奇异人生1 是第一篇章免费，后边的篇章需要23.8港币。
 

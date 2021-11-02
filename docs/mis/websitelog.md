@@ -48,5 +48,12 @@ my site prgress of each working day
 
 ### NOV 1
 
-- Redesigned Homepage (NEW!@v0.99) (one week workload)
+- redesigned Homepage (NEW!@v0.99) (one week workload)
 - correction of typo
+
+### NOV 2
+
+- 1.0 version RELEASE
+- fixed bugs on the homepage
+- added more pic-container on hp, pics in py-steam article
+- modified preface of TapWater
