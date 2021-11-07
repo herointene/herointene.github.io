@@ -42,6 +42,8 @@ nav:
 theme:
   name: material
   logo: assets/logo.png
+  font: 
+    text: Noto Serif SC
   language: zh
   features:
     - navigation.tabs
@@ -77,7 +79,7 @@ markdown_extensions:
   - pymdownx.superfences
 
 
-copyright: Copyright &copy; 2021 TingZaiZok
+copyright: Copyright &copy; 2021 TingZaiZuk
 
 extra:
   homepage: https://herointene.github.io

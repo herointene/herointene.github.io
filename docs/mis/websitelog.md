@@ -57,3 +57,8 @@ my site prgress of each working day
 - fixed bugs on the homepage
 - added more pic-container on hp, pics in py-steam article
 - modified preface of TapWater
+
+### NOV 7
+
+- bugs fixed
+- changed into Noto serif font
