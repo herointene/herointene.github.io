@@ -62,3 +62,7 @@ my site prgress of each working day
 
 - bugs fixed
 - changed into Noto serif font
+
+### NOV 9
+
+- removed header title with adding a override page

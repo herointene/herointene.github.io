@@ -41,6 +41,7 @@ nav:
 
 theme:
   name: material
+  custom_dir: overrides
   logo: assets/logo.png
   font: 
     text: Noto Serif SC
