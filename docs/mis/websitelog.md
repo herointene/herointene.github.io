@@ -66,3 +66,8 @@ my site prgress of each working day
 ### NOV 9
 
 - removed header title with adding a override page
+
+### NOV 21
+
+- bugs fixed
+- modified homepage, point out direction of v2.0
