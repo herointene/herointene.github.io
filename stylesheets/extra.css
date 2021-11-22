@@ -30,7 +30,7 @@
 /* Title */
 
 .titlecard{
-  width: 1200px;
+  width: 100%;
   height: 325px;
   justify-content: center;
   margin-top: 100px;
@@ -177,19 +177,19 @@
 }
 
 .head-container-left h1 {
-  text-align: left; 
+  text-align: right; 
   font-size:100px;
   line-height: 0%;
 }
 .head-container-left h2{
   font-size:50px;
   line-height: 0%;
-  text-align: left;
+  text-align: right;
 }
 
 .head-container-left h4{
   font-size:15px;
-  text-align: left;
+  text-align: right;
 }
 
 @media (max-width: 1218px) {
