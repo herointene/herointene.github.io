@@ -71,3 +71,8 @@ my site prgress of each working day
 
 - bugs fixed
 - modified homepage, point out direction of v2.0
+
+### NOV 22
+
+- uploaded 1 tech, 1 poem
+- bugs fixed

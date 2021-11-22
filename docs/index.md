@@ -32,7 +32,7 @@ hide:
 
 <div class="fullblock" style="background-image: url(mis/bg1.png);background-position: bottom;">
 <h1>333</h1>
-<p>儘請期待 Photographic Project: 333</p>
+<p>敬請期待 Photographic Project: 333</p>
 </div>
 
 <div class="flex-container-right">

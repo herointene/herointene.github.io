@@ -10,6 +10,7 @@ nav:
         爬取校招網招聘信息: tech/recruitment2021-crawling-python.md
         爬取豆瓣帖子: tech/douban-crawling-python.md 
       突發奇想:
+        Mkdocs混合頁面: tech/mixedmkdocs.md
         語音助手與天氣: tech/analytics-weather.md
   - Tap Water:
     - Preface: poems/preface.md
@@ -21,6 +22,7 @@ nav:
         和歌山之旅: poems/ch4/trip-of-wakayama.md
         奧克蘭的初夏: poems/ch4/trip-of-auckland.md
         Wu Kai Sha: poems/ch4/wukaisha.md 
+        成都的四日三夜: poems/ch4/trip-of-chengdu.md
     - Chapter VI:
         音符: poems/ch6/note.md
         宇宙飛船: poems/ch6/spaceship.md
@@ -78,6 +80,8 @@ markdown_extensions:
   - meta
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
 
 
 copyright: Copyright &copy; 2021 TingZaiZuk
