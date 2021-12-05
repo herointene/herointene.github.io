@@ -20,8 +20,8 @@ hide:
     <h4>搞錯，但都是蜘蛛啦</h4>
   </div>
   <div class="card">
-    <a href="https://herointene.github.io/tech/steam-crawling-python/">
-      <img src="mis/640.png" alt=" " style="width:100%">
+    <a href="./tech/steam-crawling-python">
+      <img src="mis/steampy.jpg" alt=" " style="width:100%">
       <div class="container">
         <h4><b>爬取Steam游戲榜單</b></h4>
         <p>分析的第一步：打開Python！</p>
@@ -29,6 +29,23 @@ hide:
     </a>
   </div>
 </div>
+
+<div class="flex-container-right">
+  <div class="head-container-left">
+    <h2>加點個性</h2>
+    <h4>這個頁面好看嗎？</h4>
+  </div>
+  <div class="card">
+    <a href="./tech/mixedmkdocs">
+      <img src="mis/mixmk.jpg" alt=" " style="width:100%">
+      <div class="container">
+        <h4><b>Mkdocs 混合頁面</b></h4>
+        <p>markdown+HTML+CSS</p>
+      </div>
+    </a>
+  </div>
+</div>
+
 
 <div class="fullblock" style="background-image: url(mis/bg1.png);background-position: bottom;">
 <h1>333</h1>
@@ -41,7 +58,7 @@ hide:
     <h4>你不好好學習，將來怎麽養活自己？</h4>
   </div>
   <div class="card">
-    <a href="https://herointene.github.io/talk/about-life-choices/">
+    <a href="./talk/about-life-choices">
       <img src="mis/oldmancard.png" alt=" " style="width:100%">
       <div class="container">
         <h4><b>關於選擇</b></h4>
@@ -52,15 +69,15 @@ hide:
 </div>
 
 
-
-
+<!--<iframe src="//player.bilibili.com/player.html?aid=925581718&bvid=BV1YT4y1372J&cid=188741128&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="600px"> </iframe>
+-->
 
 <div class="flex-container">
   <div class="head-container">
     <h2>多喝熱水。</h2>
   </div>
   <div class="card">
-    <a href="https://herointene.github.io/poems/ch1/celeste/">
+    <a href="./poems/ch1/celeste">
       <img src="mis/bluepole.jpg" alt=" " style="width:100%">
       <div class="container">
         <h4><b>Celeste</b></h4>
@@ -76,7 +93,7 @@ hide:
     <h4>書寫夢境裏的湯圓大軍</h4>
   </div>
   <div class="card">
-    <a href="https://herointene.github.io/talk/digital-sweetdumpling/">
+    <a href="./talk/digital-sweetdumpling">
       <img src="mis/tingqianchuiliu.png" alt=" " style="width:100%">
       <div class="container">
         <h4><b>電子湯圓</b></h4>
