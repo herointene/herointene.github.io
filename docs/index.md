@@ -48,7 +48,7 @@ hide:
 
 <div class="flex-container-right">
   <a href="./poems/preface">
-    <div class="fullblock" style=" width:600px; background-image: url(mis/tapwaterbg.png);">
+    <div class="fullblock600" style="background-image: url(mis/tapwaterbg.png);">
       <h1>TapWater</h1>
       <p>再來七杯自來水，持續更新...</p>
     </div>
