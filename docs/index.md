@@ -46,10 +46,29 @@ hide:
   </div>
 </div>
 
+<div class="flex-container-right">
+  <a href="./poems/preface">
+    <div class="fullblock" style=" width:600px; background-image: url(mis/tapwaterbg.png);">
+      <h1>TapWater</h1>
+      <p>再來七杯自來水，持續更新...</p>
+    </div>
+  </a>
+  <div class="fullblock" style="background-image: url(mis/bg1.png); background-position: bottom;">
+    <h1>333</h1>
+    <p>敬請期待 Photographic Project: 333</p>
+  </div>
+</div>
 
-<div class="fullblock" style="background-image: url(mis/bg1.png);background-position: bottom;">
-<h1>333</h1>
-<p>敬請期待 Photographic Project: 333</p>
+<div class="garagebandcontainer"> 
+  <div class="garagebandtextbox">
+    <div><img src="./mis/garagebandicon.png" style="width: 100px;"></div>
+    <div><img src="mis/garagebandtext.png" style="width:1000px;"></div>
+    <h3>模仿、抄襲、致敬，生活。</h3>
+    <h4>主頁面敬請期待</h4>
+  </div>
+  <div class="garagebandbox">
+  <iframe src="//player.bilibili.com/player.html?aid=925581718&bvid=BV1YT4y1372J&cid=188741128&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width= "540px" height="360px"> </iframe>
+  </div>
 </div>
 
 <div class="flex-container-right">
@@ -69,18 +88,16 @@ hide:
 </div>
 
 
-<!--<iframe src="//player.bilibili.com/player.html?aid=925581718&bvid=BV1YT4y1372J&cid=188741128&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="600px"> </iframe>
--->
 
 <div class="flex-container">
   <div class="head-container">
-    <h2>多喝熱水。</h2>
+    <h2>那晚的流星……</h2>
   </div>
   <div class="card">
-    <a href="./poems/ch1/celeste">
+    <a href="./talk/grant-wishes">
       <img src="mis/bluepole.jpg" alt=" " style="width:100%">
       <div class="container">
-        <h4><b>Celeste</b></h4>
+        <h4><b>許願</b></h4>
         <p>看到流星，記得按A鍵許願</p>
       </div>
     </a>

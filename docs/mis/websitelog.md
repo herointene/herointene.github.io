@@ -52,7 +52,7 @@ my site prgress of each working day
 - correction of typo
 
 ### NOV 2
-
+v1.0
 - 1.0 version RELEASE
 - fixed bugs on the homepage
 - added more pic-container on hp, pics in py-steam article
@@ -76,3 +76,9 @@ my site prgress of each working day
 
 - uploaded 1 tech, 1 poem
 - bugs fixed
+
+### DEC 6
+v1.1
+- bugs fixed
+- added embedded video (garageband work showed in index)
+- now the index page is more orderly

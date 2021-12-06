@@ -1,5 +1,13 @@
-site_name: 艇仔粥
+# Copyright (c) 2021 Ted WU <wulited@outlook.com>
 
+site_name: 艇仔粥 TingZaiZuk
+site_url: https://herointene.github.io
+site_author: Ted WU
+site_description: >-
+  Personal website introduced technical skills
+  sharing / personal portfolio / articles / music .etc
+
+copyright: Copyright &copy; 2021 TingZaiZuk
 
 nav:
   - Home: index.md
@@ -84,10 +92,13 @@ markdown_extensions:
       alternate_style: true
 
 
-copyright: Copyright &copy; 2021 TingZaiZuk
+
 
 extra:
   homepage: https://herointene.github.io
-
+  social:
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:<wulited@outlook.com>
+      name: Email me
 extra_css:
   - stylesheets/extra.css
