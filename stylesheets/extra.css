@@ -15,6 +15,17 @@
   transition: 0.3s;  
 }
 
+.fullblock600{
+  width: 600px;
+  height: 600px;
+  padding: 200px 0px;
+  border-radius: 30px;
+  background-color: black;
+  color: #ffffff;
+  margin-bottom: 20px;
+  transition: 0.3s;  
+}
+
 .fullblock:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
@@ -26,6 +37,23 @@
 }
 
 .fullblock p{
+  color: #86868B;
+  text-align: center;
+  font-size: 25px;
+}
+
+
+.fullblock600:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.fullblock600 h1{
+  color: #ffffff;
+  text-align: center;
+  font-size: 50px;
+}
+
+.fullblock600 p{
   color: #86868B;
   text-align: center;
   font-size: 25px;
