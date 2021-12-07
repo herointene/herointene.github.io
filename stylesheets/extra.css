@@ -2,67 +2,18 @@
   --md-accent-fg-color: #90A4AE;
 }
 
-/* for testing */
-
-.fullblock{
-  width: 500px;
-  height: 600px;
-  padding: 200px 0px;
-  border-radius: 30px;
-  background-color: black;
-  color: #ffffff;
-  margin-bottom: 20px;
-  transition: 0.3s;  
+/* for headerbar, change font of page name */
+.md-ellipsis {
+    font-family: Helvetica, sans-serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
-.fullblock600{
-  width: 600px;
-  height: 600px;
-  padding: 200px 0px;
-  border-radius: 30px;
-  background-color: black;
-  color: #ffffff;
-  margin-bottom: 20px;
-  transition: 0.3s;  
-}
-
-.fullblock:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-.fullblock h1{
-  color: #ffffff;
-  text-align: center;
-  font-size: 50px;
-}
-
-.fullblock p{
-  color: #86868B;
-  text-align: center;
-  font-size: 25px;
-}
+/* HOME PAGE________HOME PAGE */
 
 
-.fullblock600:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-.fullblock600 h1{
-  color: #ffffff;
-  text-align: center;
-  font-size: 50px;
-}
-
-.fullblock600 p{
-  color: #86868B;
-  text-align: center;
-  font-size: 25px;
-}
-
-/* for Home page Main part*/
-
-
-/* Title */
+/* HomePage Title */
 
 .titlecard{
   width: 100%;
@@ -100,6 +51,54 @@
 
   
 }
+
+
+/* for block :tapwater/333 */
+
+.fullblock{
+  width: 500px;
+  height: 600px;
+  padding: 200px 0px;
+  border-radius: 30px;
+  background-color: black;
+  color: #ffffff;
+  margin-bottom: 20px;
+  transition: 0.3s;  
+}
+
+.fullblock .btn {
+  background-color: rgb(65 91 129);
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  text-align: center;
+  width: 100px;
+  text-decoration: none;
+  position: absolute;
+  left: 250px;
+  cursor: pointer;
+  border-radius: 28px;
+}
+
+.fullblock:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.fullblock h1{
+  color: #ffffff;
+  text-align: center;
+  font-size: 50px;
+}
+
+.fullblock p{
+  color: #ffffff;
+  text-align: center;
+  font-size: 25px;
+}
+
+
+
+
 
 
 /*--container for main box-- 圖片在右邊則為right*/
@@ -142,7 +141,7 @@
 
 }
 
-@media (max-width: 1218px) {
+@media (max-width: 1171px) {
   .garagebandtextbox {
     margin-top: 50px;
   }
@@ -184,7 +183,7 @@
 
 @media (max-width: 1218px) {
   .card {
-    margin: 20px;
+    margin-top: 20px;
   }
 }
 
@@ -237,7 +236,7 @@
 }
 
 @media (max-width: 1218px) {
-.head-container {margin: auto;}
+.head-container {align-self: center;}
 .head-container h1 {font-size:80px;}
 .head-container h2 {font-size:40px;}
 .head-container h4 {font-size:10px;}
@@ -273,7 +272,7 @@
 
 @media (max-width: 1218px) {
 
-.head-container-left {margin: auto;}
+.head-container-left {align-self: center;}
 .head-container-left h1 {font-size:80px;}
 .head-container-left h2 {font-size:40px;}
 .head-container-left h4 {font-size:10px;}
