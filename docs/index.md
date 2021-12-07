@@ -47,18 +47,20 @@ hide:
 </div>
 
 <div class="flex-container-right">
-  <a href="./poems/preface">
-    <div class="fullblock600" style="background-image: url(mis/tapwaterbg.png);">
-      <h1>TapWater</h1>
-      <p>再來七杯自來水，持續更新...</p>
-    </div>
-  </a>
+  <div class="fullblock" style="width:600px; background-image: url(mis/tapwaterbg.png);">
+    <h1>TapWater</h1>
+    <p>再來七杯自來水，持續更新...</p>
+    <a class="btn" href="./poems/preface">
+      > 擰開
+    </a>
+  </div>
+
   <div class="fullblock" style="background-image: url(mis/bg1.png); background-position: bottom;">
     <h1>333</h1>
     <p>敬請期待 Photographic Project: 333</p>
   </div>
 </div>
-
+ 
 <div class="garagebandcontainer"> 
   <div class="garagebandtextbox">
     <div><img src="./mis/garagebandicon.png" style="width: 100px;"></div>
