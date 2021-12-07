@@ -88,3 +88,4 @@ v1.1
 - urgent bug fixed
 - added a button for tapwater box in homepage
 - changed font family to sans-serif to check if it is work good in Apple OS
+- added Google Analytics
