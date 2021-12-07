@@ -50,9 +50,11 @@ hide:
   <div class="fullblock" style="width:600px; background-image: url(mis/tapwaterbg.png);">
     <h1>TapWater</h1>
     <p>再來七杯自來水，持續更新...</p>
-    <a class="btn" href="./poems/preface">
-      > 擰開
-    </a>
+    <div class="relativebox">
+      <a class="btn" href="./poems/preface">
+        > 擰開
+      </a>
+    </div>
   </div>
 
   <div class="fullblock" style="background-image: url(mis/bg1.png); background-position: bottom;">
