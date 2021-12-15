@@ -46,13 +46,16 @@ nav:
 
   - About: about.md
   - 建站日志: mis/websitelog.md 
+  - 計分器: https://herointene.github.io/donatcal
 
 
 
 theme:
   name: material
   custom_dir: overrides
+  favicon: assets/logo.png
   logo: assets/logo.png
+
   font: 
     text: Noto Serif SC
   language: zh
