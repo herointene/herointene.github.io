@@ -7,7 +7,7 @@ Mkdocs 使用 Markdown 格式的文檔方便執筆者，但在網頁可擴展性
 
 比如艇仔粥的v1.0首頁就是用了混合頁面元素：markdown的分割綫，CSS渲染的卡片……
 
-![](../img/mixedmkdocs1.png)
+![](img/mixedmkdocs1.png)
 
 本文通過 Markdown 格式從頭到尾的順序介紹可以混合的方式。
 

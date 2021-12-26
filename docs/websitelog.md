@@ -79,6 +79,7 @@ v1.0
 
 ### DEC 6
 v1.1
+
 - bugs fixed
 - added embedded video (garageband work showed in index)
 - now the index page is more orderly
@@ -89,3 +90,13 @@ v1.1
 - added a button for tapwater box in homepage
 - changed font family to sans-serif to check if it is work good in Apple OS
 - added Google Analytics
+
+### DEC 18
+
+- added donatcal to nav
+
+### DEC 26
+v1.2
+
+- uploaded 1 poem, 1 talk editing
+- reorded some foolish src path

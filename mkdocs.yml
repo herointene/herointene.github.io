@@ -26,6 +26,7 @@ nav:
         再來七杯自來水: poems/ch1/tap-water.md
         Celeste: poems/ch1/celeste.md
         魚腸: poems/ch1/fishsausage.md
+        袁鳳嵐: poems/ch1/sierrablue.md
     - Chapter IV:
         和歌山之旅: poems/ch4/trip-of-wakayama.md
         奧克蘭的初夏: poems/ch4/trip-of-auckland.md
@@ -43,9 +44,10 @@ nav:
       向流星許願: talk/grant-wishes.md
       狩月人: talk/moon-hunter.md
       電子湯圓: talk/digital-sweetdumpling.md
+      2021之總結: talk/2021conclusion.md
 
   - About: about.md
-  - 建站日志: mis/websitelog.md 
+  - log: websitelog.md 
   - 計分器: https://herointene.github.io/donatcal
 
 
@@ -90,9 +92,13 @@ markdown_extensions:
   - footnotes
   - meta
   - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
+  - tables
 
 
 
