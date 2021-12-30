@@ -1215,15 +1215,15 @@
 <p>本文通過 Markdown 格式從頭到尾的順序介紹可以混合的方式。</p>
 <h3 id="meta-data">META DATA</h3>
 <p>在本文檔最上方加上 meta data ，前提是需要在配置頁面 <code>mkdocs.yml</code> 裏加上 extensions:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">markdown_extensions</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">meta</span>
+<div class="highlight"><pre><span></span><code><span class="nt">markdown_extensions</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">meta</span><span class="w"></span>
 </code></pre></div>
 <p>meta data 有什麽用處呢？目前它可以通過在頁首添加如下代碼來隱藏左右兩邊的網頁目錄以及頁面内章節目錄：</p>
-<div class="highlight"><pre><span></span><code><span class="nn">---</span>
-<span class="nt">hide</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">navigation</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">toc</span>
-<span class="nn">---</span>
+<div class="highlight"><pre><span></span><code><span class="nn">---</span><span class="w"></span>
+<span class="nt">hide</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">navigation</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">toc</span><span class="w"></span>
+<span class="nn">---</span><span class="w"></span>
 </code></pre></div>
 <h3 id="html-css">HTML 與 CSS</h3>
 <p>接下來便可以使用HTML于正文内。請注意，雖然CSS可以放在HTML裏，但强烈建議在mkdocs教學文檔所説的那樣，另開一個 <code>extra.css</code> 。因爲這樣網頁可以一開始一次性讀取所有CSS，在點開其他頁面的時候有更快的讀取速度而不會逐條讀取CSS内容。</p>
@@ -1242,13 +1242,13 @@
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="p">.</span><span class="nc">fullblock</span><span class="p">{</span>
-<span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
-<span class="k">padding</span><span class="p">:</span> <span class="mi">50</span><span class="kt">px</span><span class="p">;</span>
-<span class="k">border-radius</span><span class="p">:</span> <span class="mi">30</span><span class="kt">px</span><span class="p">;</span>
-<span class="k">background-color</span><span class="p">:</span> <span class="kc">black</span><span class="p">;</span>
-<span class="k">color</span><span class="p">:</span> <span class="mh">#ffffff</span><span class="p">;</span>  
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="p">.</span><span class="nc">fullblock</span><span class="p">{</span><span class="w"></span>
+<span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">%</span><span class="p">;</span><span class="w"></span>
+<span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">50</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
+<span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
+<span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="kc">black</span><span class="p">;</span><span class="w"></span>
+<span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="mh">#ffffff</span><span class="p">;</span><span class="w">  </span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 </div>
 </div>
