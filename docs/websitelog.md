@@ -100,3 +100,8 @@ v1.2
 
 - uploaded 1 poem, 1 talk editing
 - reorded some foolish src path
+
+### DEC 31
+
+- 2021 conclusion uploaded in talk tag
+- Happy New Year 
