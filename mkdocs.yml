@@ -114,3 +114,5 @@ extra:
     property: G-NSSC5W311R
 extra_css:
   - stylesheets/extra.css
+extra_javascript:
+  - javascripts/extra.js
