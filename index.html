@@ -77,11 +77,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#_1" class="md-skip">
-          跳转至
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -352,8 +347,6 @@
       
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
-      
-        
       
       
       <a href="." class="md-nav__link md-nav__link--active">
@@ -1079,149 +1072,160 @@
               </div>
             
             
-              
-                
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
                 
 
-<h1 id="_1"></h1>
-<div class="titlecard">
-<h1>艇</h1>
-<h2>仔粥……</h2>
-<h4>滾燙熱湯，冰冷生蠔；生猛海鮮，值得啖一陣</h4>
-</div>
+<script>
+  // change index style: full page
 
-<hr />
-<div class="flex-container">
-  <div class="head-container">
-    <h2>下弦之伍</h2>
-    <h4>搞錯，但都是蜘蛛啦</h4>
-  </div>
-  <div class="card">
-    <a href="./tech/steam-crawling-python">
-      <img src="mis/steampy.jpg" alt=" " style="width:100%">
-      <div class="container">
-        <h4><b>爬取Steam游戲榜單</b></h4>
-        <p>分析的第一步：打開Python！</p>
-      </div>
-    </a>
-  </div>
-</div>
+  let styleElem = document.head.appendChild(document.createElement("style"));
+  styleElem.innerHTML = `
+    .md-main__inner {
+      margin-top: 0;
+    }
 
-<div class="flex-container-right">
-  <div class="head-container-left">
-    <h2>加點個性</h2>
-    <h4>這個頁面好看嗎？</h4>
-  </div>
-  <div class="card">
-    <a href="./tech/mixedmkdocs">
-      <img src="mis/mixmk.jpg" alt=" " style="width:100%">
-      <div class="container">
-        <h4><b>Mkdocs 混合頁面</b></h4>
-        <p>markdown+HTML+CSS</p>
-      </div>
-    </a>
-  </div>
-</div>
+    main> .md-grid {
+      max-width: none;
+    }
+    .md-content__inner {
+      margin: 0;
+      padding-top: 0;
+    }
+    .md-content__inner:before {
+      height: 0;
+    }
 
-<div class="flex-container-right">
-  <div class="fullblock" style="width:600px; background-image: url(mis/tapwaterbg.png);">
-    <h1>TapWater</h1>
-    <p>再來七杯自來水，持續更新...</p>
-    <div class="relativebox">
-      <a class="btn" href="./poems/preface">
-        > 擰開
+
+  `
+
+
+</script>
+
+<div class="index">
+  <div class="titlecard">
+  <h1>艇</h1>
+  <h2>仔粥……</h2>
+  <h4>滾燙熱湯，冰冷生蠔；生猛海鮮，值得啖一陣</h4>
+  </div>
+
+
+
+  <div class="flex-container">
+    <div class="head-container">
+      <h2>下弦之伍</h2>
+      <h4>搞錯，但都是蜘蛛啦</h4>
+    </div>
+    <div class="card">
+      <a href="./tech/steam-crawling-python">
+        <img src="mis/steampy.jpg" alt=" " style="width:100%">
+        <div class="container">
+          <h4><b>爬取Steam游戲榜單</b></h4>
+          <p>分析的第一步：打開Python！</p>
+        </div>
       </a>
     </div>
   </div>
 
-  <div class="fullblock" style="background-image: url(mis/bg1.png); background-position: bottom;">
-    <h1>333</h1>
-    <p>敬請期待 Photographic Project: 333</p>
+  <div class="flex-container-right">
+    <div class="head-container-left">
+      <h2>加點個性</h2>
+      <h4>這個頁面好看嗎？</h4>
+    </div>
+    <div class="card">
+      <a href="./tech/mixedmkdocs">
+        <img src="mis/mixmk.jpg" alt=" " style="width:100%">
+        <div class="container">
+          <h4><b>Mkdocs 混合頁面</b></h4>
+          <p>markdown+HTML+CSS</p>
+        </div>
+      </a>
+    </div>
   </div>
-</div>
 
-<div class="garagebandcontainer"> 
-  <div class="garagebandtextbox">
-    <div><img src="./mis/garagebandicon.png" style="width: 100px;"></div>
-    <div><img src="mis/garagebandtext.png" style="width:1000px;"></div>
-    <h3>模仿、抄襲、致敬，生活。</h3>
-    <h4>主頁面敬請期待</h4>
-  </div>
-  <div class="garagebandbox">
-  <iframe src="//player.bilibili.com/player.html?aid=925581718&bvid=BV1YT4y1372J&cid=188741128&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width= "540px" height="360px"> </iframe>
-  </div>
-</div>
-
-<div class="flex-container-right">
-  <div class="head-container-left">
-    <h2>我説：</h2>
-    <h4>你不好好學習，將來怎麽養活自己？</h4>
-  </div>
-  <div class="card">
-    <a href="./talk/about-life-choices">
-      <img src="mis/oldmancard.png" alt=" " style="width:100%">
-      <div class="container">
-        <h4><b>關於選擇</b></h4>
-        <p>那年是七年級的夏天，我第一次明白：只要擁有白石洲一棟樓，一世就都不用愁。</p>
+  <div class="flex-container-right">
+    <div class="fullblock" style="width:600px; background-image: url(mis/tapwaterbg.png);">
+      <h1>TapWater</h1>
+      <p>再來七杯自來水，持續更新...</p>
+      <div class="relativebox">
+        <a class="btn" href="./poems/preface">
+          > 擰開
+        </a>
       </div>
-    </a>
-  </div>
-</div>
+    </div>
 
-<div class="flex-container">
-  <div class="head-container">
-    <h2>那晚的流星……</h2>
+    <div class="fullblock" style="background-image: url(mis/bg1.png); background-position: bottom;">
+      <h1>333</h1>
+      <p>敬請期待 Photographic Project: 333</p>
+    </div>
   </div>
-  <div class="card">
-    <a href="./talk/grant-wishes">
-      <img src="mis/bluepole.jpg" alt=" " style="width:100%">
-      <div class="container">
-        <h4><b>許願</b></h4>
-        <p>看到流星，記得按A鍵許願</p>
-      </div>
-    </a>
-  </div>
-</div>
 
-<div class="flex-container-right">
-  <div class="head-container-left">
-    <h2>秋末 冬至</h2>
-    <h4>書寫夢境裏的湯圓大軍</h4>
+  <div class="garagebandcontainer"> 
+    <div class="garagebandtextbox">
+      <div><img src="./mis/garagebandicon.png" style="width: 100px;"></div>
+      <div><img src="mis/garagebandtext.png" style="width:1000px;"></div>
+      <h3>模仿、抄襲、致敬，生活。</h3>
+      <h4>主頁面敬請期待</h4>
+    </div>
+    <div class="garagebandbox">
+    <iframe src="//player.bilibili.com/player.html?aid=925581718&bvid=BV1YT4y1372J&cid=188741128&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width= "540px" height="360px"> </iframe>
+    </div>
   </div>
-  <div class="card">
-    <a href="./talk/digital-sweetdumpling">
-      <img src="mis/tingqianchuiliu.png" alt=" " style="width:100%">
-      <div class="container">
-        <h4><b>電子湯圓</b></h4>
-        <p>“刺繡五紋添弱線，吹葭六管動浮灰。”</p>
-      </div>
-    </a>
-  </div>
-</div>
 
-<h4 style="text-align: center; font-size: 10px; color: gray;">更多首頁導覽内容，敬請期待下一次更新……</h4>
+  <div class="flex-container-right">
+    <div class="head-container-left">
+      <h2>我説：</h2>
+      <h4>你不好好學習，將來怎麽養活自己？</h4>
+    </div>
+    <div class="card">
+      <a href="./talk/about-life-choices">
+        <img src="mis/oldmancard.png" alt=" " style="width:100%">
+        <div class="container">
+          <h4><b>關於選擇</b></h4>
+          <p>那年是七年級的夏天，我第一次明白：只要擁有白石洲一棟樓，一世就都不用愁。</p>
+        </div>
+      </a>
+    </div>
+  </div>
+
+
+
+  <div class="flex-container">
+    <div class="head-container">
+      <h2>那晚的流星……</h2>
+    </div>
+    <div class="card">
+      <a href="./talk/grant-wishes">
+        <img src="mis/bluepole.jpg" alt=" " style="width:100%">
+        <div class="container">
+          <h4><b>許願</b></h4>
+          <p>看到流星，記得按A鍵許願</p>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="flex-container-right">
+    <div class="head-container-left">
+      <h2>秋末 冬至</h2>
+      <h4>書寫夢境裏的湯圓大軍</h4>
+    </div>
+    <div class="card">
+      <a href="./talk/digital-sweetdumpling">
+        <img src="mis/tingqianchuiliu.png" alt=" " style="width:100%">
+        <div class="container">
+          <h4><b>電子湯圓</b></h4>
+          <p>“刺繡五紋添弱線，吹葭六管動浮灰。”</p>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <h4 style="text-align: center; font-size: 10px; color: gray; margin-bottom: 0;">更多首頁導覽内容，敬請期待下一次更新……</h4>
+
+</div>
 
               
             </article>
