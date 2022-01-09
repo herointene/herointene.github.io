@@ -105,3 +105,10 @@ v1.2
 
 - 2021 conclusion uploaded in talk tag
 - Happy New Year 
+
+## 2022
+
+### JAN 9
+
+- bug fixed
+- adjusted style sheet of index, for redesigning in future
