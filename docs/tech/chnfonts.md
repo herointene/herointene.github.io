@@ -19,7 +19,7 @@ theme:
 
     不建議對code block裏的字體進行修改，非襯綫字體和等寬字體在顯示代碼以及較小字體的時候顯得格外清晰。
 
-設置完成后，Noto Serif 字體在 Apple OS 設備中，導航欄上方的的網站名字被縮略，使得網站標題欄失去意義。如果要修復此錯誤，只能退回默認的無襯綫字體。想這麽做，需要通過加入個性化的CSS樣式表進行精確更改：
+設置完成后，Noto Serif 字體在 Apple OS 設備中，導航欄上方的的網站名字超過2個字就會被縮略，使得網站標題欄位失去意義。如果要修復此錯誤，需要通過加入個性化的CSS樣式表進行精確更改：
 
 在你的網站文件夾裏加入`extra.css`:
 
@@ -41,10 +41,13 @@ extra_css:
 
 ``` CSS
 .md-header__topic > .md-ellipsis {
-    font-family: Helvetica, sans-serif;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-```
+    overflow: visible;
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+}
+/* text-overflow 與 white-space 兩個并不會生效，因爲overflow永遠都是可視的。
+寫在這裏只是因爲他們三者平時經常混在一起而已。 */
 
-會發現在 Apple OS 設備裏的網頁標題欄被展開。雖然與内容字體不統一，但是這是簡單有效的方法，至於是否有其他字體同樣有效，請君自行測試。
+```    
+
+會發現在 Apple OS 設備裏的網頁標題欄被展開。這是由於mfm默認的標題内置overflow功能被定義爲“太長會被隱藏”，變成visible之後不管多長的文字都會被展開來，除非超出設備顯示寬度（但應該不會有人把自己的網站叫那麽長吧……）。

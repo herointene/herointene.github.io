@@ -112,3 +112,9 @@ v1.2
 
 - bug fixed
 - adjusted style sheet of index, for redesigning in future
+
+### Jan 13
+v1.3
+
+- uploaded 2 tech talk
+- adjusted font on header bar
