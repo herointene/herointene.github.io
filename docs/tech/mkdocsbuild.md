@@ -1,6 +1,6 @@
-# Material of Mkdocs 個人網站搭建
+# Material for Mkdocs 個人網站搭建
 
-這篇文章講述了本網站運用Mkdocs與其衍生模板框架Material of Mkdocs的使用方法之快速導覽，記錄的目的一個在於對自己搭建本網站的經歷進行文字化存檔；另一個在於可讓初學者快速進入工程階段而非在門口徘徊。
+這篇文章講述了本網站運用Mkdocs與其衍生模板框架Material for Mkdocs的使用方法之快速導覽，記錄的目的一個在於對自己搭建本網站的經歷進行文字化存檔；另一個在於可讓初學者快速進入工程階段而非在門口徘徊。
 
 ## 快速導覽
 
@@ -12,7 +12,7 @@ Tingzaizuk 是一個靜態網站。它不需要服務器也可以托管在GitHub
 
 - 閲讀官方文檔：
     - Mkdocs: <https://www.mkdocs.org/>
-    - Material of Mkdocs: <https://squidfunk.github.io/mkdocs-material/>
+    - Material for Mkdocs: <https://squidfunk.github.io/mkdocs-material/>
 
 - 下載需要用到的東西：
     - VS Code （推薦）: <https://code.visualstudio.com/>

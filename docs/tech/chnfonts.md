@@ -1,6 +1,6 @@
 # Mkdocs 漢語字體設置
 
-在Material of Mkdocs中，漢語中文本身自帶。由於其本身自帶的字體為 Roboto，中文顯示與英文一樣是非襯綫字體。但mfm允許用戶使用HTML支持的字體，但更簡單的方法是只用Google Fonts提供的字體。
+在Material for Mkdocs中，漢語中文本身自帶。由於其本身自帶的字體為 Roboto，中文顯示與英文一樣是非襯綫字體。但mfm允許用戶使用HTML支持的字體，但更簡單的方法是只用Google Fonts提供的字體。
 
 目前Google Fonts擁有8種不同類的字體（僅Noto支持近乎所有繁體字）。一般情況下大多數人只想轉換Serif/Sans Serif字體，其他字體雖然彰顯個性但有些字不支持改字體會顯得與内容格格不入，影響整體美觀。
 
