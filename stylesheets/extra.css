@@ -3,9 +3,9 @@
 }
 
 /* for headerbar, change font of page name */
-.md-ellipsis {
-    font-family: Helvetica, sans-serif;
-    overflow: hidden;
+.md-header__topic > .md-ellipsis {
+    /* font-family: Helvetica, sans-serif; */
+    overflow: visible;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
