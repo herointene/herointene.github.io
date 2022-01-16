@@ -13,14 +13,16 @@ nav:
   - Home: index.md
   - 丨: mis/blankpage.md
   - Tech Talk:
+      Mkdocs網站搭建:
+        快速概覽 & 簡介: tech/mkdocsbuild.md
+        用Markdown寫文章: tech/md-guide.md
+        Mkdocs混合頁面: tech/mixedmkdocs.md
+        導航欄設置心得: tech/mkdocs-nav.md
+        Mkdocs漢語字體: tech/chnfonts.md
       爬行動物:
         爬取steam游戲榜單: tech/steam-crawling-python.md
         爬取校招網招聘信息: tech/recruitment2021-crawling-python.md
         爬取豆瓣帖子: tech/douban-crawling-python.md 
-      Mkdocs網站搭建:
-        快速概覽 & 簡介: tech/mkdocsbuild.md
-        Mkdocs混合頁面: tech/mixedmkdocs.md
-        Mkdocs漢語字體: tech/chnfonts.md
       突發奇想:
         語音助手與天氣: tech/analytics-weather.md
   - Tap Water:

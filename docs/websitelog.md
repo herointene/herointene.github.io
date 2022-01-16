@@ -1,24 +1,125 @@
+---
+hide:   
+    - navigation
+---
+
 # websitelog
 
 my site prgress of each working day
 
+## 2022
+
+### JAN 16
+
+- uploaded 2 tech talk
+
+
+### JAN 13
+v1.3
+
+- uploaded 2 tech talk
+- adjusted font on header bar
+
+
+### JAN 9
+
+- bug fixed
+- adjusted style sheet of index, for redesigning in future
+
+
 ## 2021
 
-### OCT 10
 
-- created a new repository on GitHub
-- configured GitHub Action
-- pushed Mkdocs folder to GitHub and connected sucessfully
-- uploaded 2 tech files, 2 poems
-- updated About page
+### DEC 31
 
-### OCT 11
+- 2021 conclusion uploaded in talk tag
+- Happy New Year 
 
-- renamed Website to "ting zai zuk"
-- uploaded 1 tech, 1 poem, 1 talk
-- updated Home page, created websitelog page
-- markdown link test
-- error on gh action, finding
+
+### DEC 26
+v1.2
+
+- uploaded 1 poem, 1 talk editing
+- reorded some foolish src path
+
+
+### DEC 18
+
+- added donatcal to nav
+
+
+### DEC 7
+
+- urgent bug fixed
+- added a button for tapwater box in homepage
+- changed font family to sans-serif to check if it is work good in Apple OS
+- added Google Analytics
+
+
+### DEC 6
+v1.1
+
+- bugs fixed
+- added embedded video (garageband work showed in index)
+- now the index page is more orderly
+
+
+### NOV 22
+
+- uploaded 1 tech, 1 poem
+- bugs fixed
+
+
+### NOV 21
+
+- bugs fixed
+- modified homepage, point out direction of v2.0
+
+
+### NOV 9
+
+- removed header title with adding a override page
+
+
+### NOV 7
+
+- bugs fixed
+- changed into Noto serif font
+
+
+### NOV 2
+v1.0
+- 1.0 version RELEASE
+- fixed bugs on the homepage
+- added more pic-container on hp, pics in py-steam article
+- modified preface of TapWater
+
+
+### NOV 1
+
+- redesigned Homepage (NEW!@v0.99) (one week workload)
+- correction of typo
+
+
+### OCT 21
+
+- uploaded 6 poems
+- correction of typo
+- testing text font for Apple OS (Index Head)
+
+
+### OCT 19
+
+- uploaded 1 tech, 1 poem
+- updated preface of Tap Water
+
+
+### OCT 16
+
+- modified some pages
+- added a blank page
+- uploaded 2 talks
+
 
 ### OCT 13
 
@@ -28,93 +129,82 @@ my site prgress of each working day
 - redesigned Home page, with CSS formating
 - CSS config
 
-### OCT 16
 
-- modified some pages
-- added a blank page
-- uploaded 2 talks
+### OCT 11
 
-### OCT 19
-
-- uploaded 1 tech, 1 poem
-- updated preface of Tap Water
-
-### OCT 21
-
-- uploaded 6 poems
-- correction of typo
-- testing text font for Apple OS (Index Head)
+- renamed Website to "ting zai zuk"
+- uploaded 1 tech, 1 poem, 1 talk
+- updated Home page, created websitelog page
+- markdown link test
+- error on gh action, finding
 
 
-### NOV 1
+### OCT 10
 
-- redesigned Homepage (NEW!@v0.99) (one week workload)
-- correction of typo
+- created a new repository on GitHub
+- configured GitHub Action
+- pushed Mkdocs folder to GitHub and connected sucessfully
+- uploaded 2 tech files, 2 poems
+- updated About page
 
-### NOV 2
-v1.0
-- 1.0 version RELEASE
-- fixed bugs on the homepage
-- added more pic-container on hp, pics in py-steam article
-- modified preface of TapWater
 
-### NOV 7
 
-- bugs fixed
-- changed into Noto serif font
 
-### NOV 9
 
-- removed header title with adding a override page
 
-### NOV 21
 
-- bugs fixed
-- modified homepage, point out direction of v2.0
 
-### NOV 22
 
-- uploaded 1 tech, 1 poem
-- bugs fixed
 
-### DEC 6
-v1.1
 
-- bugs fixed
-- added embedded video (garageband work showed in index)
-- now the index page is more orderly
 
-### DEC 7
 
-- urgent bug fixed
-- added a button for tapwater box in homepage
-- changed font family to sans-serif to check if it is work good in Apple OS
-- added Google Analytics
 
-### DEC 18
 
-- added donatcal to nav
 
-### DEC 26
-v1.2
 
-- uploaded 1 poem, 1 talk editing
-- reorded some foolish src path
 
-### DEC 31
 
-- 2021 conclusion uploaded in talk tag
-- Happy New Year 
 
-## 2022
 
-### JAN 9
 
-- bug fixed
-- adjusted style sheet of index, for redesigning in future
 
-### Jan 13
-v1.3
 
-- uploaded 2 tech talk
-- adjusted font on header bar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
