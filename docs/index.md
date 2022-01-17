@@ -32,9 +32,10 @@ hide:
 
 <div class="index">
   <div class="titlecard">
-  <h1>艇</h1>
-  <h2>仔粥……</h2>
-  <h4>滾燙熱湯，冰冷生蠔；生猛海鮮，值得啖一陣</h4>
+    <div>
+      <img src = './assets/tinggif.gif' style="display: block; margin: auto;">
+      <p>滾燙熱湯，冰冷生蠔；生猛海鮮，值得啖一陣</p>
+    </div>
   </div>
 
 

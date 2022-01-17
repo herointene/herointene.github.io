@@ -9,6 +9,10 @@ my site prgress of each working day
 
 ## 2022
 
+### JAN 17
+
+- added gif to index page
+
 ### JAN 16
 
 - uploaded 2 tech talk
