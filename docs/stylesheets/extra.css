@@ -13,26 +13,29 @@
 /* HOME PAGE________HOME PAGE */
 
 .index {
-  /* background-color: var(--md-accent-fg-color); */
+  position: relative;
+  margin: auto;
+  max-width: 61rem;
   /* padding-top: 100px; */
 }
 /* HomePage Title */
 
 .titlecard{
+  position: relative;
   width: 100%;
   height: 1525px;
   padding-top: 100px;
-  background: linear-gradient(var(--md-primary-fg-color),75%,var(--md-primary-bg-color))
+  background: linear-gradient(var(--md-primary-fg-color),60%,var(--md-primary-bg-color))
   
 }
 
 .titlecard p {
   text-align: center;
-  color: #ffffff;
+  color: #ffffffc9;
 }
 
 .titlecard .tinggif{
-  cont
+  position: relative;
 }
 
 /* .titlecard h1 {

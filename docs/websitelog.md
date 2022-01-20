@@ -9,6 +9,11 @@ my site prgress of each working day
 
 ## 2022
 
+## Jan 20
+v1.4
+
+- minor update
+
 ### JAN 17
 
 - added gif to index page
