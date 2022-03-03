@@ -23,6 +23,8 @@ nav:
         爬取steam游戲榜單: tech/steam-crawling-python.md
         爬取校招網招聘信息: tech/recruitment2021-crawling-python.md
         爬取豆瓣帖子: tech/douban-crawling-python.md 
+      VUE呢: 
+        循環裏匹配不同樣式: tech/vue-setstyleinloop.md
       突發奇想:
         語音助手與天氣: tech/analytics-weather.md
   - Tap Water:
@@ -53,7 +55,8 @@ nav:
 
   - About: about.md
   - log: websitelog.md 
-  - 計分器: https://herointene.github.io/donatcal
+  - 計分器: https://herointene.github.io/donatcal/withvue
+  - KanaKill: https://kanakill.netlify.app
 
 
 

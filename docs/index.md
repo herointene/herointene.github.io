@@ -99,10 +99,14 @@ hide:
         </a>
       </div>
     </div>
-
-    <div class="fullblock" style="background-image: url(mis/bg1.png); background-position: bottom;">
-      <h1>333</h1>
-      <p>敬請期待 Photographic Project: 333</p>
+    <div class="fullblock" style="background-color: #FCA5A5 ; background-position: bottom;">
+      <h1>KanaKill</h1>
+      <p>一個日本五十音練習游戲</p>
+        <div class="relativebox">
+          <a class="btn" style="background-color: #FDD9D9" href="https://kanakill.netlify.app" target="_blank">
+          > 努力
+          </a>
+      </div>
     </div>
   </div>
   
