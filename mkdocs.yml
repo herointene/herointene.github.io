@@ -25,6 +25,7 @@ nav:
         爬取豆瓣帖子: tech/douban-crawling-python.md 
       VUE呢: 
         循環裏匹配不同樣式: tech/vue-setstyleinloop.md
+        組件間的數據傳輸: tech/vue-delivermethods.md
       突發奇想:
         語音助手與天氣: tech/analytics-weather.md
   - Tap Water:
@@ -103,7 +104,11 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
   - tables

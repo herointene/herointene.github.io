@@ -9,12 +9,17 @@ my site prgress of each working day
 
 ## 2022
 
-## Mar 3
+### MAR 15
+
+- added 1 tech talk
+- updated material version to v8.2.5
+
+### MAR 3
 
 - added 1 tech talk
 - update KanaKill card & link
 
-## Jan 20
+### JAN 20
 v1.4
 
 - minor update
