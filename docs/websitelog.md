@@ -9,6 +9,13 @@ my site prgress of each working day
 
 ## 2022
 
+### AUG 29
+v1.5
+- redesigned new index
+- added social network links
+- adjusted theme color
+- updated material version to v8.4.2
+
 ### MAR 15
 
 - added 1 tech talk

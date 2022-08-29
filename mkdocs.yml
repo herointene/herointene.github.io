@@ -29,22 +29,22 @@ nav:
       突發奇想:
         語音助手與天氣: tech/analytics-weather.md
   - Tap Water:
-    - Preface: poems/preface.md
-    - Chapter I: 
+      Preface: poems/preface.md
+      Chapter I: 
         再來七杯自來水: poems/ch1/tap-water.md
         Celeste: poems/ch1/celeste.md
         魚腸: poems/ch1/fishsausage.md
         袁鳳嵐: poems/ch1/sierrablue.md
-    - Chapter IV:
+      Chapter IV:
         和歌山之旅: poems/ch4/trip-of-wakayama.md
         奧克蘭的初夏: poems/ch4/trip-of-auckland.md
         Wu Kai Sha: poems/ch4/wukaisha.md 
         成都的四日三夜: poems/ch4/trip-of-chengdu.md
-    - Chapter VI:
+      Chapter VI:
         音符: poems/ch6/note.md
         宇宙飛船: poems/ch6/spaceship.md
         Untitled: poems/ch6/Untitled.md
-    - Chapter VII:
+      Chapter VII:
         緊急想念: poems/ch7/urgently-miss.md
         不可抗力: poems/ch7/force-majeure.md
   - mini Ted Talk:
@@ -55,7 +55,6 @@ nav:
       2021之總結: talk/2021conclusion.md
 
   - About: about.md
-  - log: websitelog.md 
   - 計分器: https://herointene.github.io/donatcal/withvue
   - KanaKill: https://kanakill.netlify.app
 
@@ -84,8 +83,9 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Switch to dark mode
+
     - scheme: slate
-      primary: black
+      primary: blue grey
       
       toggle:
         icon: material/weather-night
@@ -119,6 +119,13 @@ markdown_extensions:
 extra:
   homepage: https://herointene.github.io
   social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/herointene
+      name: Github
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/tedilitarianism/
+      name: Instagram
+
     - icon: fontawesome/solid/paper-plane
       link: mailto:<wulited@outlook.com>
       name: Email me
