@@ -1,5 +1,8 @@
-:root{
+:root > *{
   --md-accent-fg-color: #90A4AE;
+  --md-typeset-a-color: #6A91A6;
+  --md-footer-bg-color--dark: var(--md-primary-fg-color);
+  --md-footer-bg-color: hsla(199.53,18.30%,46.08%,0.5);
 }
 
 /* for headerbar, change font of page name */
@@ -11,19 +14,12 @@
 }
 
 /* HOME PAGE________HOME PAGE */
-
-.index {
-  position: relative;
-  margin: auto;
-  max-width: 61rem;
-  /* padding-top: 100px; */
-}
 /* HomePage Title */
-
 .titlecard{
   position: relative;
+  margin-top:-2rem;
   width: 100%;
-  height: 1525px;
+  height: 1025px;
   padding-top: 100px;
   background: linear-gradient(var(--md-primary-fg-color),60%,var(--md-primary-bg-color))
   
@@ -38,269 +34,52 @@
   position: relative;
 }
 
-/* .titlecard h1 {
-  text-align: center; 
-  font-size:100px;
-}
-.titlecard h2{
-  font-size:50px;
-  line-height: 1em;
-  margin: 0;
-  text-align: center;
-}
-
-.titlecard h4{
-  font-size:15px;
-  text-align: center;
-} */
-
-
 @media (max-width: 1218px) {
   .titlecard {
     width: 100%;
-    height: 1200px;
+    height: 1000px;
   }
-  /* .titlecard h1 {font-size:80px;}
-  .titlecard h2 {font-size:40px;}
-  .titlecard h4 {font-size:10px;} */
-
-  
 }
 
 
-/* for block :tapwater/333 */
+.index {
+  position: relative;
+  /* background: white; */
+  margin: auto;
+  max-width: 61rem;
+  padding: 10px;
+}
 
-.fullblock{
-  width: 500px;
-  height: 600px;
-  padding: 200px 0px;
-  border-radius: 30px;
-  background-color: black;
-  color: #ffffff;
+/* flexbox - for list different category card */
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.contentcard {
+  min-width: 300px;
+  padding: 20px;
   margin-bottom: 20px;
-  transition: 0.3s;  
+  background: #f4f6f7;
+  box-shadow: -5px 8px 30px -4px rgba(0, 0, 0, 0.46);
 }
 
-.relativebox {
-  position: relative;
+.cardtitle{
+  font-size: 32px;
+  color: #546d78;
+  margin-bottom: 5px;
 }
-
-.fullblock .btn {
-  background-color: rgb(65 91 129);
-  border: none;
-  color: rgb(255, 255, 255);
-  padding: 10px 20px;
-  text-align: center;
-  width: 25%;
-  text-decoration: none;
-  position: absolute;
-  left: 37.5%;
-  cursor: pointer;
-  border-radius: 28px;
+.cardinfo{
+  margin-left: 5px;
 }
 
 
-.fullblock:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+/* avatar in About page */
+.avatar {
+  vertical-align: middle;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
 }
-
-.fullblock h1{
-  color: #ffffff;
-  text-align: center;
-  font-size: 50px;
-}
-
-.fullblock p{
-  color: #ffffff;
-  text-align: center;
-  font-size: 25px;
-}
-
-
-
-
-
-
-/*--container for main box-- 圖片在右邊則為right*/
-
-.flex-container {
-  position: relative;
-  display: flex;
-  margin: 100px 0px;
-  flex-flow: row-reverse wrap;
-  justify-content: space-evenly;
-}
-
-.flex-container-right {
-  position: relative;
-  display: flex;
-  margin: 50px 0px;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-}
-
-/* gagrageband container */
-
-.garagebandcontainer {
-  position: relative;
-  display: flex;
-  margin: 50px 0px;
-  border-radius: 30px;
-  background-image: url(../mis/garagebandwallpaper.png);
-  background-color: rgb(245, 200, 160);
-  background-position: bottom;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-}
-
-          
-.garagebandtextbox {
-  width: 500px;
-  align-self: center;
-  text-align: center;
-
-}
-
-@media (max-width: 1171px) {
-  .garagebandtextbox {
-    margin-top: 50px;
-  }
-  iframe {
-    height: 150px;
-  }
-}
-
-.garagebandtextbox h2 {
-  font-size: 50px;
-  margin: auto;
-  color: #e67920;
-}
-
-.garagebandtextbox h3 {
-  font-size: 20px;
-  margin: auto;
-  color: #693b16;
-}
-/* garageband iframe box */
-
-.garagebandbox {
-  margin: 50px;
-}
-
-
-/*--picture card--*/
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  width: 500px;
-  border-radius: 30px;
-  
-}
-
-.card img {
-  border-radius: 30px 30px 0px 0px;
-}
-
-@media (max-width: 1218px) {
-  .card {
-    margin-top: 20px;
-  }
-}
-
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-
-
-
-
-/*--container for pic card--*/
-.container {
-  padding: 2px 16px;
-  
-}
-
-.card a:link {
-  text-decoration: none;
-}
-
-.card a:visited {
-  text-decoration: none;
-  color: #90A4AE;
-}
-
-/*--container for Heading text--*/
-.head-container {
-  
-  width: 500px;
-  margin-left: 100px;
-  align-self: center;
-
-}
-
-.head-container h1 {
-  text-align: left; 
-  margin: 0;
-  line-height: 0%;
-}
-.head-container h2{
-  font-size:50px;
-  margin: 0;
-  text-align: left;
-}
-
-.head-container h4{
-  font-size:15px;
-  text-align: left;
-}
-
-@media (max-width: 1218px) {
-.head-container {align-self: center;}
-.head-container h1 {font-size:80px;}
-.head-container h2 {font-size:40px;}
-.head-container h4 {font-size:10px;}
-
-}
-
-
-/* for heding on left side of pic */
-
-.head-container-left {
-  
-  width: 500px;
-  margin-right: 100px;
-  align-self: center;
-  
-}
-
-.head-container-left h1 {
-  text-align: right; 
-  font-size:100px;
-  margin: 0;
-}
-.head-container-left h2{
-  font-size:50px;
-  margin: 0;
-  text-align: right;
-}
-
-.head-container-left h4{
-  font-size:15px;
-  text-align: right;
-}
-
-@media (max-width: 1218px) {
-
-.head-container-left {align-self: center;}
-.head-container-left h1 {font-size:80px;}
-.head-container-left h2 {font-size:40px;}
-.head-container-left h4 {font-size:10px;}
-
-}
-
-
-
-
-
-
