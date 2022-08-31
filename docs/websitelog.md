@@ -9,6 +9,10 @@ my site prgress of each working day
 
 ## 2022
 
+
+### SEP 1
+- added 1 tech article
+- deleted 2 links in nav(already on index page)
 ### AUG 29
 v1.5
 - redesigned new index

@@ -24,6 +24,7 @@ nav:
         爬取校招網招聘信息: tech/recruitment2021-crawling-python.md
         爬取豆瓣帖子: tech/douban-crawling-python.md 
       VUE呢: 
+        開發心得: tech/vue-tips.md
         循環裏匹配不同樣式: tech/vue-setstyleinloop.md
         組件間的數據傳輸: tech/vue-delivermethods.md
       突發奇想:
@@ -55,8 +56,6 @@ nav:
       2021之總結: talk/2021conclusion.md
 
   - About: about.md
-  - 計分器: https://herointene.github.io/donatcal/withvue
-  - KanaKill: https://kanakill.netlify.app
 
 
 
