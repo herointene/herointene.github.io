@@ -23,7 +23,7 @@ nav:
         爬取steam游戲榜單: tech/steam-crawling-python.md
         爬取校招網招聘信息: tech/recruitment2021-crawling-python.md
         爬取豆瓣帖子: tech/douban-crawling-python.md 
-      VUE呢: 
+      表面功夫: 
         開發心得: tech/vue-tips.md
         循環裏匹配不同樣式: tech/vue-setstyleinloop.md
         組件間的數據傳輸: tech/vue-delivermethods.md
