@@ -576,14 +576,14 @@
       
       
         <label class="md-nav__link" for="__nav_3_3">
-          VUE呢
+          表面功夫
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="VUE呢" data-md-level="2">
+      <nav class="md-nav" aria-label="表面功夫" data-md-level="2">
         <label class="md-nav__title" for="__nav_3_3">
           <span class="md-nav__icon md-icon"></span>
-          VUE呢
+          表面功夫
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -648,15 +648,15 @@
   
 </li>
         
-      </ul>
-    </nav>
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    3. 深色模式前期準備
+  </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    3.
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1296,15 +1296,15 @@
   
 </li>
         
-      </ul>
-    </nav>
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    3. 深色模式前期準備
+  </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    3.
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1323,7 +1323,7 @@
 
 
 <h1 id="vue">Vue 項目開發中的心得</h1>
-<p><em>本篇内容為 Vue 開發當中所遇到的困難與技巧的集合，意在備忘的同時提供一個從初始到結束整個環節中的進程分享，確保在再啓新一次項目時吸取經驗與避開錯誤。陸續更新。</em></p>
+<p><em>本篇内容為 Vue 開發當中所遇到的困難與技巧的集合，涵蓋 JS、TS、CSS、Python 等語言。意在備忘的同時提供一個從初始到結束整個環節中的進程分享，確保在再啓新一次項目時吸取經驗與避開錯誤。陸續更新。</em></p>
 <hr />
 <div style="margin:auto; width:100px; border:2px">前期準備</div>
 
@@ -1342,9 +1342,16 @@
 <li>更換 <code>public/favicon.ico</code></li>
 <li>刪除 <code>router/index.ts</code> 裏的 routes</li>
 <li>刪除無用的 components，並重新更換新主頁。</li>
-<li>更換 <code>main.css</code> 中的風格樣式</li>
+<li>更換 <code>main.css/base.css</code> 中的風格樣式</li>
 </ol>
-<h2 id="3">3.</h2>
+<h3 id="3">3. 深色模式前期準備</h3>
+<ul>
+<li>在 Vue3 + Vite 版本中，模板的 <code>base.css</code> 存在 <code>@media (prefers-color-scheme: dark)</code>，如果使用手動控制深色模式功能的話需要把它改爲簡單的 <code>.dark{}</code>。</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Vue 的深色模式手動控制組件可參考 <a href="https://github.com/vuejs/theme/blob/main/src/core/components/VTSwitchAppearance.vue" target="_blank">VitePress 官方的組件</a>。</p>
+</div>
 
 
   
