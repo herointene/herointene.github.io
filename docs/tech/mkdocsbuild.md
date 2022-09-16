@@ -28,7 +28,7 @@ Tingzaizuk 是一個靜態網站。它不需要服務器也可以托管在 GitHu
     - python & Mkdocs
 
 !!! tips
-    在開發過程中使用 Anaconda 環境裏的 python，在每次啓動 mkdocs 本地服務器的時候總會有少許麻煩。重新搭建或者初次搭建請務必考慮使用 VS Code 裏邊的插件中心進行安裝 Python、Git，方便快捷。
+    在開發過程中使用 Anaconda 環境裏的 python，在每次啓動 mkdocs 本地服務器的時候總會有少許麻煩。重新搭建或者初次搭建請務必考慮使用 VS Code 裏邊的插件中心進行安裝 Python、Git，方便快捷。（更新：現在的 VS CODE 貌似可以直接在 terminal 運行 anaconda shell……）
 
 
 ## 學習路綫

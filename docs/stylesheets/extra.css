@@ -5,6 +5,22 @@
   --md-footer-bg-color: hsla(199.53,18.30%,46.08%,0.5);
 }
 
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: hsla(199.53,18.30%,46.08%,0.5);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: hsla(199.53,18.30%,46.08%,0.5);
+  border-radius: 20px;
+}
+
 /* for headerbar, change font of page name */
 .md-header__topic > .md-ellipsis {
   /* font-family: Helvetica, sans-serif; */

@@ -9,6 +9,9 @@ my site prgress of each working day
 
 ## 2022
 
+### SEP 17
+- styled scrollbar
+- added 3 poems
 ### SEP 3
 - tips(short for updated `/tech/vue-tips.md`)
 ### SEP 1
