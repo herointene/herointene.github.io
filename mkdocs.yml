@@ -16,6 +16,7 @@ nav:
       Mkdocs網站搭建:
         快速概覽 & 簡介: tech/mkdocsbuild.md
         用Markdown寫文章: tech/md-guide.md
+        HTML in Mkdocs: tech/mkdocs-html.md
         Mkdocs混合頁面: tech/mixedmkdocs.md
         導航欄設置心得: tech/mkdocs-nav.md
         Mkdocs漢語字體: tech/chnfonts.md
@@ -23,6 +24,7 @@ nav:
         爬取steam游戲榜單: tech/steam-crawling-python.md
         爬取校招網招聘信息: tech/recruitment2021-crawling-python.md
         爬取豆瓣帖子: tech/douban-crawling-python.md 
+        爬取Covid個案數據: tech/covidhk-crawling-python.md 
       表面功夫: 
         開發心得: tech/vue-tips.md
         循環裏匹配不同樣式: tech/vue-setstyleinloop.md
@@ -30,7 +32,8 @@ nav:
       突發奇想:
         語音助手與天氣: tech/analytics-weather.md
   - Tap Water:
-      Preface: poems/preface.md
+      Preface: 
+        Preface: poems/preface.md
       Chapter I: 
         再來七杯自來水: poems/ch1/tap-water.md
         Celeste: poems/ch1/celeste.md
@@ -55,6 +58,7 @@ nav:
       關於選擇: talk/about-life-choices.md
       向流星許願: talk/grant-wishes.md
       狩月人: talk/moon-hunter.md
+      緊急維修: talk/urgent-repaired.md
       電子湯圓: talk/digital-sweetdumpling.md
       2021之總結: talk/2021conclusion.md
 
@@ -72,6 +76,8 @@ theme:
     text: Noto Serif SC
   language: zh
   features:
+    # - navigation.instant
+    - navigation.tracking
     - navigation.tabs
     - navigation.sections
     - navigation.expand

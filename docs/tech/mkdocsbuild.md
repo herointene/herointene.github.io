@@ -46,7 +46,7 @@ Tingzaizuk 是一個靜態網站。它不需要服務器也可以托管在 GitHu
 - 流程
     1. 内容管理
         1. [如何使用 markdown 來寫文章](./md-guide.md)
-        2. 
+        2. [HTML in Mkdocs](./mkdocs-html.md)
         3. [混合頁面的使用](./mixedmkdocs.md)
         4. [導航欄層級設置心得](./mkdocs-nav.md)
     2. 框架與環境搭建

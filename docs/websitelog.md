@@ -9,6 +9,9 @@ my site prgress of each working day
 
 ## 2022
 
+### SEP 18
+- added 1 article, 2 techs
+- rewrote about page
 ### SEP 17
 - styled scrollbar
 - added 3 poems

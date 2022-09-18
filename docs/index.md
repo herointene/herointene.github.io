@@ -10,6 +10,7 @@ hide:
   styleElem.innerHTML = `
     .md-main__inner {
       margin-top: 0;
+      backgroud: white;
     }
   
     main> .md-grid {
@@ -35,10 +36,7 @@ hide:
     <p>滾燙熱湯，冰冷生蠔；生猛海鮮，值得啖一陣</p>
   </div>
 </div>
-
-
 <div class="index">
-
   <div class="flexbox">
     <div class="contentcard">
       <div class="cardtitle">&#128187; 前端練習</div>
@@ -48,14 +46,12 @@ hide:
         <a style="display: block;" href="https://herointene.github.io/donatcal/withvue" target="_blank">&#128200;Donacal - 可視化的派對得分計算器&#128279;</a>
       </div>
     </div>
-    
     <div class="contentcard">
       <div class="cardtitle">&#127760; mkdocs教學</div>
       <div class="cardinfo">
         <a style="display: block;" href="tech/mkdocsbuild/">&#128682;Material for Mkdocs 個人網站搭建入口</a>
       </div>
     </div>
-
     <div class="contentcard">
       <div class="cardtitle">&#128540; 純粹興趣</div>
       <div class="cardinfo">
@@ -64,8 +60,5 @@ hide:
         <a style="display: block;" href="talk/about-life-choices/">> And More...</a>
       </div>
     </div>
-
   </div>
-
-  
 </div>
