@@ -12,7 +12,7 @@
         <meta name="author" content="Ted WU">
       
       
-        <link rel="canonical" href="https://herointene.github.io/tech/chnfonts/">
+        <link rel="canonical" href="https://herointene.github.io/tech/covidhk-crawling-python/">
       
       <link rel="icon" href="../../assets/logo.png">
       <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.5.1">
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#mkdocs" class="md-skip">
+        <a href="#covid" class="md-skip">
           跳转至
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Mkdocs漢語字體
+              爬取Covid個案數據
             
           </span>
         </div>
@@ -388,16 +388,14 @@
               
   
   
-    
-  
   
     
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1" type="checkbox" id="__nav_3_1" checked>
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_3_1" type="checkbox" id="__nav_3_1" checked>
       
       
       
@@ -488,21 +486,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../chnfonts/" class="md-nav__link">
         Mkdocs漢語字體
       </a>
-      
     </li>
   
 
@@ -519,14 +507,16 @@
               
   
   
+    
+  
   
     
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" checked>
       
       
       
@@ -589,11 +579,52 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../covidhk-crawling-python/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          爬取Covid個案數據
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         爬取Covid個案數據
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    開始爬行
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1338,6 +1369,21 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    開始爬行
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1351,41 +1397,53 @@
                   
 
 
-<h1 id="mkdocs">Mkdocs 漢語字體設置</h1>
-<p>在 Material for Mkdocs 中，漢語中文本身自帶。由於其本身自帶的字體為 Roboto，中文顯示與英文一樣是非襯綫字體。mfm 允許用戶使用 HTML 支持的字體，但更簡單的方法是只用 Google Fonts 提供的字體。</p>
-<p>目前 Google Fonts 擁有 8 種不同類的字體（僅 Noto 支持近乎所有繁體字）。一般情況下大多數人只想轉換 Serif/Sans Serif 字體，其他字體雖然彰顯個性但有些字不支持改字體會顯得與内容格格不入，影響整體美觀。</p>
-<p>mfm 官方文檔沒有列出如何設置中文字體，這使得許多人在設置字體后并沒有變化。原因是字體名稱在<code>mkdocs.yml</code>文件裏與 Google Fonts 顯示的字體名稱不同。</p>
-<p>以 Noto Serif Simplified Chinese 舉例，在設置文檔裏需把 “簡體中文”進行縮寫：</p>
-<div class="highlight"><pre><span></span><code><span class="nt">theme</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">font</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Noto Serif SC       &lt;------ 請注意此處被改爲 &quot;SC&quot; 。</span><span class="w"></span>
+<h1 id="covid">爬取香港 Covid 個案的公開數據</h1>
+<p><img alt="完成效果圖" src="../img/covidscrawl.png" /></p>
+<p><em>已上傳至 Github，<a href="https://github.com/herointene/COVID19_HongKongCases">源代碼</a>。2022 年 3 月香港 Omicron BA.2 大爆發后，香港衛生署不再在公開儀表板裏顯示個案，此份爬蟲文件仍可運行但數據僅截至到 2022 年初。</em></p>
+<h2 id="_1">開始爬行</h2>
+<p>爬取香港衛生署的儀表板網站是通過讀取網站返回的 json 數據進行抓取。</p>
+<p>需要的庫：</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">requests</span> <span class="c1">#解析網站</span>
+<span class="kn">from</span> <span class="nn">urllib.parse</span> <span class="kn">import</span> <span class="n">urlencode</span> <span class="c1">#get方法的query，用字典的形式自動傳入url的‘query？’後方。</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span> <span class="c1">#轉換成數據表</span>
+<span class="kn">import</span> <span class="nn">time</span> <span class="c1">#將數據表文檔用日期命名以便排序</span>
 </code></pre></div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>建議使用簡中 SC ,有些簡化字在繁中 TC 裏沒有被收錄。</p>
-<p>不建議對 code block 裏的字體進行修改，非襯綫字體和等寬字體在顯示代碼以及較小字體的時候顯得格外清晰。</p>
-</div>
-<p>設置完成后，Noto Serif 字體在 Apple OS 設備中，導航欄上方的的網站名字超過 2 個字就會被縮略，使得網站標題欄位失去意義。如果要修復此錯誤，需要通過加入個性化的CSS樣式表進行精確更改：</p>
-<p>在你的網站文件夾裏加入<code>extra.css</code>:</p>
-<div class="highlight"><pre><span></span><code>├─ docs/
-│  └─ stylesheets/
-│     └─ extra.css
-└─ mkdocs.yml
+<p>接下來非常的簡單，只要傳入與儀表板相同的請求 filter，讀取 json 並轉換成 Dataframe。</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">get_page</span><span class="p">():</span>
+    <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;user-agent&quot;</span><span class="p">:</span> <span class="s2">&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36&quot;</span><span class="p">}</span>
+    <span class="n">params</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;f&quot;</span><span class="p">:</span> <span class="s2">&quot;json&quot;</span><span class="p">,</span>
+              <span class="s2">&quot;where&quot;</span><span class="p">:</span> <span class="s2">&quot;1=1&quot;</span><span class="p">,</span>
+              <span class="s2">&quot;returnGeometry&quot;</span><span class="p">:</span> <span class="s2">&quot;false&quot;</span><span class="p">,</span>
+              <span class="s2">&quot;spatialRel&quot;</span><span class="p">:</span> <span class="s2">&quot;esriSpatialRelIntersects&quot;</span><span class="p">,</span>
+              <span class="s2">&quot;outFields&quot;</span><span class="p">:</span> <span class="s2">&quot;*&quot;</span><span class="p">,</span>
+              <span class="s2">&quot;orderByFields&quot;</span><span class="p">:</span> <span class="s2">&quot;個案編號 desc&quot;</span><span class="p">,</span>
+              <span class="s2">&quot;resultOffset&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span>
+              <span class="s2">&quot;resultRecordCount&quot;</span><span class="p">:</span> <span class="s2">&quot;30000&quot;</span><span class="p">,</span>
+              <span class="s2">&quot;resultType&quot;</span><span class="p">:</span> <span class="s2">&quot;standard&quot;</span><span class="p">,</span>
+              <span class="s2">&quot;cacheHint&quot;</span><span class="p">:</span> <span class="s2">&quot;true&quot;</span>
+    <span class="p">}</span>
+    <span class="n">url</span><span class="o">=</span><span class="s1">&#39;https://services8.arcgis.com/PXQv9PaDJHzt8rp0/arcgis/rest/services/Merge_Display_0227_test_view/FeatureServer/0/query?&#39;</span><span class="o">+</span> <span class="n">urlencode</span><span class="p">(</span><span class="n">params</span><span class="p">)</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span><span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">r</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
+        <span class="n">content</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">content</span>
+
+<span class="k">def</span> <span class="nf">save_to_csv</span><span class="p">(</span><span class="n">content</span><span class="p">):</span>
+    <span class="n">cases</span> <span class="o">=</span> <span class="n">content</span><span class="p">[</span><span class="s1">&#39;features&#39;</span><span class="p">]</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([</span><span class="n">case</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;attributes&#39;</span><span class="p">)</span><span class="k">for</span> <span class="n">case</span> <span class="ow">in</span> <span class="n">cases</span><span class="p">])</span>
+    <span class="n">date</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%d</span><span class="s1">_%m&#39;</span><span class="p">,</span><span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">())</span>
+    <span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;covid19case_full_</span><span class="si">{}</span><span class="s1">.csv&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">date</span><span class="p">),</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8-sig&#39;</span><span class="p">)</span>  
 </code></pre></div>
-<p>然後在<code>mkdocs.yml</code>文檔裏加入代碼以啓用外挂樣式表：</p>
-<div class="highlight"><pre><span></span><code><span class="nt">extra_css</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">stylesheets/extra.css</span><span class="w"></span>
+<p>做成 py 文件，以便日後可以讀取：</p>
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Starting collect...&#39;</span><span class="p">)</span>
+    <span class="n">content</span> <span class="o">=</span> <span class="n">get_page</span><span class="p">()</span>
+    <span class="n">save_to_csv</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Successfully saved csv file. The programe will shutdown in 5 seconds.&#39;</span><span class="p">)</span>
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span> <span class="c1">#儀式感</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;done&#39;</span><span class="p">)</span>
 </code></pre></div>
-<p>最後在<code>extra.css</code>裏添加以下代碼：</p>
-<div class="highlight"><pre><span></span><code><span class="p">.</span><span class="nc">md-header__topic</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="p">.</span><span class="nc">md-ellipsis</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="k">overflow</span><span class="p">:</span><span class="w"> </span><span class="kc">visible</span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="k">text-overflow</span><span class="p">:</span><span class="w"> </span><span class="kc">ellipsis</span><span class="p">;</span><span class="w"> </span>
-<span class="w">    </span><span class="k">white-space</span><span class="p">:</span><span class="w"> </span><span class="kc">nowrap</span><span class="p">;</span><span class="w"> </span>
-<span class="p">}</span><span class="w"></span>
-<span class="c">/* text-overflow 與 white-space 兩個并不會生效，因爲 overflow 永遠都是可視的。</span>
-<span class="c">寫在這裏只是因爲他們三者平時經常混在一起而已。 */</span><span class="w"></span>
-</code></pre></div>
-<p>會發現在 Apple OS 設備裏的網頁標題欄被展開。這是由於 mfm 默認的標題内置 overflow 功能被定義爲“太長會被隱藏”，變成 visible 之後不管多長的文字都會被展開來，除非超出設備顯示寬度（但應該不會有人把自己的網站叫那麽長吧……）。</p>
+<p>完成。</p>
 
 
   
@@ -1413,7 +1471,7 @@
     <nav class="md-footer__inner md-grid" aria-label="页脚" >
       
         
-        <a href="../mkdocs-nav/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 導航欄設置心得" rel="prev">
+        <a href="../douban-crawling-python/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 爬取豆瓣帖子" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1422,20 +1480,20 @@
               <span class="md-footer__direction">
                 上一页
               </span>
-              導航欄設置心得
+              爬取豆瓣帖子
             </div>
           </div>
         </a>
       
       
         
-        <a href="../steam-crawling-python/" class="md-footer__link md-footer__link--next" aria-label="下一页: 爬取steam游戲榜單" rel="next">
+        <a href="../vue-tips/" class="md-footer__link md-footer__link--next" aria-label="下一页: 開發心得" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 下一页
               </span>
-              爬取steam游戲榜單
+              開發心得
             </div>
           </div>
           <div class="md-footer__button md-icon">
