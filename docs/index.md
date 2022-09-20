@@ -30,6 +30,7 @@ hide:
   
 </script>
 #
+<h1 style="display:none">TingZaiZuk - 艇仔粥</h1>
 <div class="titlecard">
   <div class = "tinggif">
     <img src = './assets/tinggif.gif' style="display: block; margin: auto;">

@@ -1,11 +1,21 @@
-# 關於本站
+---
+hide:
+  - navigation
+---
 
-<img src="../assets/avatar.jpg" alt="Avatar" class="avatar">
+
+# 關於本站
 
 隨便寫寫是我的興趣。
 從小就想著要建一個個人網站了。必須讓某一天人類的後代著陸時發現在廢土挖出來的服務器裡居然有個祖先留下的賽博靈魂。
 
 ## 關於我
+
+<br>
+
+<img src="../assets/avatar.jpg" alt="Avatar" class="avatar">
+
+<br>
 
 我在香港與深圳長大，還在臺北、上海工作生活過。目前我在東京，學習日語的同時努力提升自己。我喜歡音樂與文學藝術，喜歡編曲與隨便寫一些小文章。
 
