@@ -14,11 +14,12 @@ nav:
   - 丨: mis/blankpage.md
   - Tech Talk:
       Mkdocs網站搭建:
-        快速概覽 & 簡介: tech/mkdocsbuild.md
-        用Markdown寫文章: tech/md-guide.md
-        HTML in Mkdocs: tech/mkdocs-html.md
-        Mkdocs混合頁面: tech/mixedmkdocs.md
-        導航欄設置心得: tech/mkdocs-nav.md
+        Mkdocs快速概覽 & 簡介: tech/mkdocsbuild.md
+        1.1 用Markdown寫文章: tech/md-guide.md
+        1.2 HTML in Mkdocs: tech/mkdocs-html.md
+        1.3 Mkdocs混合頁面: tech/mixedmkdocs.md
+        1.4 導航欄設置心得: tech/mkdocs-nav.md
+        2.1 Python與Mkdocs安裝: tech\mkdocs-python-install.md
         Mkdocs漢語字體: tech/chnfonts.md
       爬行動物:
         爬取steam游戲榜單: tech/steam-crawling-python.md

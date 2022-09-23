@@ -22,11 +22,32 @@ hide:
 
 ### 我力所能及的
 
+:simple-microsoft:
+:simple-apple:
+⎮
+:simple-git:
+⎮
+:simple-html5:
+:simple-css3:
+:simple-javascript:
+:simple-typescript:
+:simple-nodedotjs:
+:material-vuejs:
+:simple-tailwindcss:
+⎮
+:simple-python:
+:simple-pandas:
+:simple-scikitlearn:
+:simple-mysql:
+:simple-mongodb:
+:simple-tableau:
+
+
 商業方面，我可以完成市場研究、商務與競爭分析、平臺運營與策略、Content Marketing、Retail Marketing等。
 
 數據方面，我會業務數據分析，簡單的機器學習分類與預測；數據抓取與爬蟲；數據可視化，我擅長 Dashboard 美化以及數據加載流程優化。[^1]
 
-軟件工程方面，前端網頁製作是我目前在自習的内容。[^2]
+軟件工程方面，web 全棧開發是目前學習的主要内容。[^2]
 
 如果需要幫手的話敬請點擊頁尾的紙飛機 ✈ 圖標向我發送 Email。
 

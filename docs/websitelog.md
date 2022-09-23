@@ -9,6 +9,9 @@ my site prgress of each working day
 
 ## 2022
 
+### SEP 23
+- added 1 tech
+- revised some pages
 ### SEP 20
 - rewrote meta title tag
 ### SEP 18

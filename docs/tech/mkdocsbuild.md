@@ -23,12 +23,12 @@ Tingzaizuk 是一個靜態網站。它不需要服務器也可以托管在 GitHu
     - Material for Mkdocs: <https://squidfunk.github.io/mkdocs-material/>
 
 - 下載需要用到的東西：
-    - VS Code （推薦）: <https://code.visualstudio.com/>
-    - Git / Git GUI / Github Desktop（推薦）: <https://git-scm.com/downloads> & <https://desktop.github.com/>
-    - python & Mkdocs
+    - VS Code: <https://code.visualstudio.com/>
+    - Git / Github Desktop（推薦）: <https://git-scm.com/downloads> & <https://desktop.github.com/>
+    - python & Mkdocs: <https://www.anaconda.com/> & <https://www.mkdocs.org/> 
 
 !!! tips
-    在開發過程中使用 Anaconda 環境裏的 python，在每次啓動 mkdocs 本地服務器的時候總會有少許麻煩。重新搭建或者初次搭建請務必考慮使用 VS Code 裏邊的插件中心進行安裝 Python、Git，方便快捷。（更新：現在的 VS CODE 貌似可以直接在 terminal 運行 anaconda shell……）
+    在開發過程中使用 Anaconda 環境裏的 python，并且接下來的幾乎大部分文章中出現的 “Mkdocs” 其實指代的是其衍生模板 “Material for Mkdocs”。後者目前依舊處於活躍更新狀態，是所有 Mkdocs 中最好的模板之一。
 
 
 ## 學習路綫
@@ -50,7 +50,7 @@ Tingzaizuk 是一個靜態網站。它不需要服務器也可以托管在 GitHu
         3. [混合頁面的使用](./mixedmkdocs.md)
         4. [導航欄層級設置心得](./mkdocs-nav.md)
     2. 框架與環境搭建
-        1. 
+        1. [Python與Mkdocs安裝](./mkdocs-python-install.md)
         2. 
         3. 
         4. 
