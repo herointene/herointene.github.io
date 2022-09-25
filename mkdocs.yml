@@ -134,7 +134,9 @@ extra:
     - icon: fontawesome/brands/instagram
       link: https://www.instagram.com/tedilitarianism/
       name: Instagram
-
+    - icon: fontawesome/brands/soundcloud
+      link: https://soundcloud.com/wulited
+      name: SoundCloud
     - icon: fontawesome/solid/paper-plane
       link: mailto:<wulited@outlook.com>
       name: Email me
