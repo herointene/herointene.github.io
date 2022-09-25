@@ -490,7 +490,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mkdocs-python-install.md" class="md-nav__link">
+      <a href="../mkdocs-python-install/" class="md-nav__link">
         2.1 Python與Mkdocs安裝
       </a>
     </li>
@@ -702,8 +702,35 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#21-vitesse" class="md-nav__link">
+    2.1 Vitesse 模板
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#3" class="md-nav__link">
     3. 深色模式前期準備
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    樣式相關
+  </a>
+  
+    <nav class="md-nav" aria-label="樣式相關">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-css-flexbox" class="md-nav__link">
+    1. CSS Flexbox 相關
   </a>
   
 </li>
@@ -1441,8 +1468,35 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#21-vitesse" class="md-nav__link">
+    2.1 Vitesse 模板
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#3" class="md-nav__link">
     3. 深色模式前期準備
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    樣式相關
+  </a>
+  
+    <nav class="md-nav" aria-label="樣式相關">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-css-flexbox" class="md-nav__link">
+    1. CSS Flexbox 相關
   </a>
   
 </li>
@@ -1489,6 +1543,10 @@
 <li>刪除無用的 components，並重新更換新主頁。</li>
 <li>更換 <code>main.css/base.css</code> 中的風格樣式</li>
 </ol>
+<h3 id="21-vitesse">2.1 Vitesse 模板</h3>
+<ol>
+<li>unoCSSconfig 裏的 shortcut 中更改或刪除預設樣式</li>
+</ol>
 <h3 id="3">3. 深色模式前期準備</h3>
 <ul>
 <li>在 Vue3 + Vite 版本中，模板的 <code>base.css</code> 存在 <code>@media (prefers-color-scheme: dark)</code>，如果使用手動控制深色模式功能的話需要把它改爲簡單的 <code>.dark{}</code>。</li>
@@ -1497,6 +1555,13 @@
 <p class="admonition-title">Tip</p>
 <p>Vue 的深色模式手動控制組件可參考 <a href="https://github.com/vuejs/theme/blob/main/src/core/components/VTSwitchAppearance.vue" target="_blank">VitePress 官方的組件</a>。</p>
 </div>
+<h2 id="_1">樣式相關</h2>
+<h3 id="1-css-flexbox">1. CSS Flexbox 相關</h3>
+<ol>
+<li>justify &amp; align 的區別在於前者使物品左右挪動、後者為上下挪動。官方説法是 align items on main axis or on cross axis.</li>
+<li>當 flex-direction 設置爲 column 時，main axis &amp; cross axis 會調換位置，此時如果想要在垂直方向居中需要使用 justify-center 而不是 align-center。</li>
+<li>Flexbox 之中的某一個物件想要有滾動條滾動時，需要同時設置 overflow:auto 和 height(maxheight)。</li>
+</ol>
 
 
   
