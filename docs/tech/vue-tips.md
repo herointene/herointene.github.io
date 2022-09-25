@@ -23,10 +23,18 @@
 6. 刪除無用的 components，並重新更換新主頁。
 7. 更換 `main.css/base.css` 中的風格樣式
 
+### 2.1 Vitesse 模板
+1. unoCSSconfig 裏的 shortcut 中更改或刪除預設樣式
+
 ### 3. 深色模式前期準備
 - 在 Vue3 + Vite 版本中，模板的 `base.css` 存在 `@media (prefers-color-scheme: dark)`，如果使用手動控制深色模式功能的話需要把它改爲簡單的 `.dark{}`。
 
 !!! tip
     Vue 的深色模式手動控制組件可參考 <a href="https://github.com/vuejs/theme/blob/main/src/core/components/VTSwitchAppearance.vue" target="_blank">VitePress 官方的組件</a>。
 
+## 樣式相關
 
+### 1. CSS Flexbox 相關
+1. justify & align 的區別在於前者使物品左右挪動、後者為上下挪動。官方説法是 align items on main axis or on cross axis.
+2. 當 flex-direction 設置爲 column 時，main axis & cross axis 會調換位置，此時如果想要在垂直方向居中需要使用 justify-center 而不是 align-center。
+3. Flexbox 之中的某一個物件想要有滾動條滾動時，需要同時設置 overflow:auto 和 height(maxheight)。

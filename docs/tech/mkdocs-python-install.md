@@ -57,3 +57,5 @@ mkdocs serve
 之後點擊它出現的網站，你就可以進入你的網站預覽頁面了。
 
 接下來，我們會對我們的網站開始進行初始設置，即下一篇的配置文件教程“mkdocs.yml 設置”。
+
+>troubleshoot: 如果安裝過程中沒有勾選 add to path, 需要手動 add path。

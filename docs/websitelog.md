@@ -9,6 +9,10 @@ my site prgress of each working day
 
 ## 2022
 
+### SEP 26
+- tips
+- added soundcloud icon
+- add link to soundcloud
 ### SEP 23
 - added 1 tech
 - revised some pages
