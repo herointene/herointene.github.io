@@ -8,7 +8,8 @@ hide:
 my site prgress of each working day
 
 ## 2022
-
+### OCT 1
+- added 2 peoms
 ### SEP 26
 - tips
 - added soundcloud icon
