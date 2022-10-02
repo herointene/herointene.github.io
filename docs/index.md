@@ -40,7 +40,7 @@ hide:
 <div class="jumbotron">
   <div class="flexbox" >
     <div class="boxshadow">
-      <a target="_blank" href="https://soundcloud.com/wulited/akarui?si=47b32e08386b41c1ad1fd0f3e36ed27b&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"><img src="./mis/IMG_0111.PNG" alt="Akarui" width="300" height="300"></a>
+      <a  target="_blank" href="https://soundcloud.com/wulited/akarui?si=47b32e08386b41c1ad1fd0f3e36ed27b&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"><img src="./mis/IMG_0111.PNG" alt="Akarui" width="300" height="300"></a>
     </div>
     <h2 style="color:#152865;align-self:center">Akarui. Listen now</h2>
   </div>

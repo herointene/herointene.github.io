@@ -5,6 +5,7 @@
   --md-footer-bg-color: hsla(199.53, 18.30%, 46.08%, 0.5);
 }
 
+/* ScrollBar: */
 /* Works on Firefox */
 * {
   scrollbar-width: thin;
@@ -13,12 +14,12 @@
 
 /* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-  width: 12px;
+  width: 8px;
 }
 
 *::-webkit-scrollbar-thumb {
   background-color: hsla(199.53, 18.30%, 46.08%, 0.5);
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 /* for headerbar, change font of page name */
@@ -56,7 +57,7 @@
   }
 }
 
-
+/* with background */
 .index {
   display: flex;
   align-items: center;
@@ -66,7 +67,7 @@
   width: 100%;
   padding: 10px;
 }
-
+/* white background */
 .jumbotron {
   display: flex;
   align-items: center;
@@ -75,18 +76,21 @@
   padding: 10px;
 }
 
+/* album display */
 .boxshadow {
   width: 300px;
   height: 300px;
-  transition: all .4s cubic-bezier(0.65, 0.05, 0.36, 1);
   border-radius: 0px;
+  transition: all .3s cubic-bezier(0.65, 0.05, 0.36, 1);
   background: #203c97;
-  box-shadow:  -18px 18px 64px #152865,
-             18px -18px 64px #2b50c9;
+  box-shadow:  -5px 5px 20px #152865,
+             5px -5px 20px #2b50c9;
 }
 
 .boxshadow:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
+  box-shadow:  -18px 18px 64px #152865,
+             18px -18px 64px #2b50c9;
 }
 
 /* flexbox - for list different category card */

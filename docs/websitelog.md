@@ -8,6 +8,9 @@ hide:
 my site prgress of each working day
 
 ## 2022
+
+### OCT 3
+- adjusted index
 ### OCT 1
 - added 2 peoms
 ### SEP 26
