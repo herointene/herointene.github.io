@@ -40,9 +40,17 @@ hide:
 <div class="jumbotron">
   <div class="flexbox" >
     <div class="boxshadow">
-      <a  target="_blank" href="https://soundcloud.com/wulited/akarui?si=47b32e08386b41c1ad1fd0f3e36ed27b&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"><img src="./mis/IMG_0111.PNG" alt="Akarui" width="300" height="300"></a>
+      <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1350194080&color=%2390a4ae&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"></div>
     </div>
     <h2 style="color:#152865;align-self:center">Akarui. Listen now</h2>
+  </div>
+</div>
+<div class="jumbotron">
+  <div class="flexbox" >
+    <div style="width:100%">
+      <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1359598387&color=%230f0f18&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"></div>
+    </div>
+    <h2 style="color:#000;align-self:center">Dive in to Jupiter</h2>
   </div>
 </div>
 <div class="index">
