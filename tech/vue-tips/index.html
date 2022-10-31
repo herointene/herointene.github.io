@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://herointene.github.io/tech/vue-tips/">
       
       <link rel="icon" href="../../assets/logo.png">
-      <meta name="generator" content="mkdocs-1.4.0, mkdocs-material-8.5.6">
+      <meta name="generator" content="mkdocs-1.4.1, mkdocs-material-8.5.7">
     
     
       
@@ -711,6 +711,33 @@
           <li class="md-nav__item">
   <a href="#3" class="md-nav__link">
     3. 深色模式前期準備
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-prettierprettier" class="md-nav__link">
+    4. 關閉 prettier/prettier
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jsts" class="md-nav__link">
+    JS/TS 相關
+  </a>
+  
+    <nav class="md-nav" aria-label="JS/TS 相關">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-typescript-localstorage" class="md-nav__link">
+    1. TypeScript 與 localStorage
   </a>
   
 </li>
@@ -1544,6 +1571,33 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#4-prettierprettier" class="md-nav__link">
+    4. 關閉 prettier/prettier
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jsts" class="md-nav__link">
+    JS/TS 相關
+  </a>
+  
+    <nav class="md-nav" aria-label="JS/TS 相關">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-typescript-localstorage" class="md-nav__link">
+    1. TypeScript 與 localStorage
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1618,6 +1672,38 @@
 <p class="admonition-title">Tip</p>
 <p>Vue 的深色模式手動控制組件可參考 <a href="https://github.com/vuejs/theme/blob/main/src/core/components/VTSwitchAppearance.vue" target="_blank">VitePress 官方的組件</a>。</p>
 </div>
+<h3 id="4-prettierprettier">4. 關閉 prettier/prettier</h3>
+<ul>
+<li>更新了 package 之後有時候 eslint 會提示很多無理由的錯誤，幾乎每行代碼後面都有提示錯誤的空格，這是由於 CRLF 與 LF 的關係，在 vscode 右下角調整就好。但是一些可容忍的寫法依舊會不斷提示錯誤，讓我心煩氣躁，只能關閉 prettier 代碼美化模塊。</li>
+<li>解決辦法：<code>.eslintrc.cjs</code> 裏添加如下代碼，直接在 <code>module.export = {</code> 下面:
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="nt">&quot;rules&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;prettier/prettier&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"></span>
+<span class="w">  </span><span class="p">},</span><span class="w"></span>
+</code></pre></div></li>
+</ul>
+<h2 id="jsts">JS/TS 相關</h2>
+<h3 id="1-typescript-localstorage">1. TypeScript 與 localStorage</h3>
+<ul>
+<li>存讀 JSON 格式的時候在 pinia 的 data 存儲中會遇到報錯，因爲無法取一個 null （第一次取時），我們需要斷言。
+<div class="highlight"><pre><span></span><code><span class="nx">state</span><span class="o">:</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">({</span><span class="w"></span>
+<span class="w">  </span><span class="nx">user</span><span class="o">:</span><span class="w"> </span><span class="kt">JSON.parse</span><span class="p">(</span><span class="nx">localStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="s1">&#39;user&#39;</span><span class="p">)</span><span class="w"> </span><span class="kr">as</span><span class="w"> </span><span class="kt">string</span><span class="p">)</span><span class="w"></span>
+<span class="p">})</span><span class="w"></span>
+<span class="c1">//我習慣寫以下代碼，待驗證是否多餘</span><span class="w"></span>
+<span class="c1">//...</span><span class="w"></span>
+<span class="nx">user</span><span class="o">:</span><span class="w"> </span><span class="kt">JSON.parse</span><span class="p">(</span><span class="nx">localStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="s1">&#39;user&#39;</span><span class="p">)</span><span class="w"> </span><span class="kr">as</span><span class="w"> </span><span class="kt">string</span><span class="p">)</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="p">[]</span><span class="w"> </span><span class="kr">as</span><span class="w"> </span><span class="nx">User</span><span class="p">[],</span><span class="w"></span>
+<span class="c1">//...</span><span class="w"></span>
+<span class="kd">interface</span><span class="w"> </span><span class="nx">User</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// freely</span><span class="w"></span>
+<span class="w">  </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="w"></span>
+<span class="w">  </span><span class="nx">timestamp</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w"></span>
+<span class="w">  </span><span class="nx">language</span><span class="o">:</span><span class="kt">string</span><span class="w"></span>
+<span class="w">  </span><span class="nx">topic</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="w"></span>
+<span class="w">  </span><span class="nx">note</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="w"></span>
+<span class="w">  </span><span class="nx">pin</span><span class="o">:</span><span class="w"> </span><span class="kt">boolean</span><span class="w"></span>
+<span class="w">  </span><span class="nx">user</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div></li>
+</ul>
 <h2 id="_1">樣式相關</h2>
 <h3 id="1-css-flexbox">1. CSS Flexbox 相關</h3>
 <ol>
@@ -1737,10 +1823,10 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top"], "search": "../../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\uff0c\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top"], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\uff0c\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.078830c0.min.js"></script>
+      <script src="../../assets/javascripts/bundle.8492ddcf.min.js"></script>
       
         <script src="../../javascripts/extra.js"></script>
       
