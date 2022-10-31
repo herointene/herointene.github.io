@@ -9,6 +9,8 @@ my site prgress of each working day
 
 ## 2022
 
+### NOV 1
+- tips
 ### OCT 12
 - updated new song to index
 ### OCT 3

@@ -32,6 +32,41 @@
 !!! tip
     Vue 的深色模式手動控制組件可參考 <a href="https://github.com/vuejs/theme/blob/main/src/core/components/VTSwitchAppearance.vue" target="_blank">VitePress 官方的組件</a>。
 
+### 4. 關閉 prettier/prettier
+- 更新了 package 之後有時候 eslint 會提示很多無理由的錯誤，幾乎每行代碼後面都有提示錯誤的空格，這是由於 CRLF 與 LF 的關係，在 vscode 右下角調整就好。但是一些可容忍的寫法依舊會不斷提示錯誤，讓我心煩氣躁，只能關閉 prettier 代碼美化模塊。
+- 解決辦法：`.eslintrc.cjs` 裏添加如下代碼，直接在 `module.export = {` 下面:
+```json
+  "rules": {
+    "prettier/prettier": 0
+  },
+```
+
+## JS/TS 相關
+
+### 1. TypeScript 與 localStorage
+- 存讀 JSON 格式的時候在 pinia 的 data 存儲中會遇到報錯，因爲無法取一個 null （第一次取時），我們需要斷言。
+``` typescript
+state: () => ({
+  user: JSON.parse(localStorage.getItem('user') as string)
+})
+//我習慣寫以下代碼，待驗證是否多餘
+//...
+user: JSON.parse(localStorage.getItem('user') as string) || [] as User[],
+//...
+interface User {
+  // freely
+  id: string
+  timestamp: number
+  language:string
+  topic: string
+  note: string
+  pin: boolean
+  user: string
+}
+
+```
+
+
 ## 樣式相關
 
 ### 1. CSS Flexbox 相關
