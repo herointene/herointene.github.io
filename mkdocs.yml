@@ -30,6 +30,7 @@ nav:
         開發心得: tech/vue-tips.md
         循環裏匹配不同樣式: tech/vue-setstyleinloop.md
         組件間的數據傳輸: tech/vue-delivermethods.md
+        编辑功能的实现: tech/vue-edit-function.md
       突發奇想:
         語音助手與天氣: tech/analytics-weather.md
   - Tap Water:
