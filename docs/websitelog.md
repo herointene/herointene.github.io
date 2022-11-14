@@ -9,6 +9,9 @@ my site prgress of each working day
 
 ## 2022
 
+### NOV 14
+- tips
+
 ### NOV 12 
 - 1 tech
 ### NOV 1

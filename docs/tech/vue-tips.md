@@ -66,10 +66,51 @@ interface User {
 
 ```
 
+### 2. TypeScript 添加 JSON 文件
 
+- 默認 TypeScript 在編譯的時候不能引入 JSON 文件，需要手動在 `tsconfig.json` 裏設置。
+
+!!! bug
+    在我的 vue3 + vite 版本中，嘗試了很多方法可是引入 JSON 依舊彈出 warning。於是我把所有方法放在一起，錯誤便消失了。
+
+```json
+//tsconfig.json
+{
+  "include": ["src/**/*.ts", "src/**/*.json"], //1：include 這些類型的文件
+  "compilerOptions": {
+    "resolveJsonModule": true, //2：允許引入 json 文件
+  },
+}
+
+```
+
+在我的 `tsconfig.json` 文件中，配置了 `references`，并且有 3 個另外的 tsconfig 文件。
+第三點是刪除 `tsconfig.json` 中的 `"compilerOptions"` 中的 `"composite": true`，另外三個配置文件均有該選項，所以我都注釋掉了。重啓 VSCode 之後錯誤不見了。
 ## 樣式相關
 
 ### 1. CSS Flexbox 相關
 1. justify & align 的區別在於前者使物品左右挪動、後者為上下挪動。官方説法是 align items on main axis or on cross axis.
 2. 當 flex-direction 設置爲 column 時，main axis & cross axis 會調換位置，此時如果想要在垂直方向居中需要使用 justify-center 而不是 align-center。
 3. Flexbox 之中的某一個物件想要有滾動條滾動時，需要同時設置 overflow:auto 和 height(maxheight)。
+
+### 2. CSS & v-bind
+1. vue.js 可以使用 v-bind 在 `<style>` 裏，像：
+
+```CSS
+
+p {
+  color: v-bind('theme.color');
+}
+
+```
+
+在 `<script>` 中，用 ref 或 reactive 聲明動態數據，可以實現 CSS 的動態變化。
+
+```js
+
+import {reactive} from 'vue'
+const theme = reactive({
+  color: 'red'
+})
+
+```
