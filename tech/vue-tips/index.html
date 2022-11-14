@@ -744,6 +744,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#2-typescript-json" class="md-nav__link">
+    2. TypeScript 添加 JSON 文件
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -760,6 +767,13 @@
           <li class="md-nav__item">
   <a href="#1-css-flexbox" class="md-nav__link">
     1. CSS Flexbox 相關
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-css-v-bind" class="md-nav__link">
+    2. CSS &amp; v-bind
   </a>
   
 </li>
@@ -1614,6 +1628,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#2-typescript-json" class="md-nav__link">
+    2. TypeScript 添加 JSON 文件
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1630,6 +1651,13 @@
           <li class="md-nav__item">
   <a href="#1-css-flexbox" class="md-nav__link">
     1. CSS Flexbox 相關
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-css-v-bind" class="md-nav__link">
+    2. CSS &amp; v-bind
   </a>
   
 </li>
@@ -1720,6 +1748,24 @@
 <span class="p">}</span><span class="w"></span>
 </code></pre></div></li>
 </ul>
+<h3 id="2-typescript-json">2. TypeScript 添加 JSON 文件</h3>
+<ul>
+<li>默認 TypeScript 在編譯的時候不能引入 JSON 文件，需要手動在 <code>tsconfig.json</code> 裏設置。</li>
+</ul>
+<div class="admonition bug">
+<p class="admonition-title">Bug</p>
+<p>在我的 vue3 + vite 版本中，嘗試了很多方法可是引入 JSON 依舊彈出 warning。於是我把所有方法放在一起，錯誤便消失了。</p>
+</div>
+<div class="highlight"><pre><span></span><code><span class="c1">//tsconfig.json</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;include&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;src/**/*.ts&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;src/**/*.json&quot;</span><span class="p">],</span><span class="w"> </span><span class="c1">//1：include 這些類型的文件</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;compilerOptions&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;resolveJsonModule&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="c1">//2：允許引入 json 文件</span><span class="w"></span>
+<span class="w">  </span><span class="p">},</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<p>在我的 <code>tsconfig.json</code> 文件中，配置了 <code>references</code>，并且有 3 個另外的 tsconfig 文件。
+第三點是刪除 <code>tsconfig.json</code> 中的 <code>"compilerOptions"</code> 中的 <code>"composite": true</code>，另外三個配置文件均有該選項，所以我都注釋掉了。重啓 VSCode 之後錯誤不見了。</p>
 <h2 id="_1">樣式相關</h2>
 <h3 id="1-css-flexbox">1. CSS Flexbox 相關</h3>
 <ol>
@@ -1727,6 +1773,20 @@
 <li>當 flex-direction 設置爲 column 時，main axis &amp; cross axis 會調換位置，此時如果想要在垂直方向居中需要使用 justify-center 而不是 align-center。</li>
 <li>Flexbox 之中的某一個物件想要有滾動條滾動時，需要同時設置 overflow:auto 和 height(maxheight)。</li>
 </ol>
+<h3 id="2-css-v-bind">2. CSS &amp; v-bind</h3>
+<ol>
+<li>vue.js 可以使用 v-bind 在 <code>&lt;style&gt;</code> 裏，像：</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="nt">p</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="nf">v-bind</span><span class="p">(</span><span class="s1">&#39;theme.color&#39;</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<p>在 <code>&lt;script&gt;</code> 中，用 ref 或 reactive 聲明動態數據，可以實現 CSS 的動態變化。</p>
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="nx">reactive</span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;vue&#39;</span><span class="w"></span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">theme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">reactive</span><span class="p">({</span><span class="w"></span>
+<span class="w">  </span><span class="nx">color</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;red&#39;</span><span class="w"></span>
+<span class="p">})</span><span class="w"></span>
+</code></pre></div>
 
 
   
