@@ -66,6 +66,8 @@ nav:
       緊急維修: talk/urgent-repaired.md
       電子湯圓: talk/digital-sweetdumpling.md
       2021之總結: talk/2021conclusion.md
+      構建自己的知識集散點: talk/knowledge-collection.md
+
 
   - About: about.md
 
@@ -81,7 +83,7 @@ theme:
     text: Noto Serif SC
   language: zh
   features:
-    # - navigation.instant
+    # - navigation.instant //affect layout of custom css
     - navigation.tracking
     - navigation.tabs
     - navigation.sections
@@ -128,6 +130,7 @@ markdown_extensions:
 
 plugins:
   - tags
+  - search
 
 
 extra:

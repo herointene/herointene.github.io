@@ -9,6 +9,9 @@ my site prgress of each working day
 
 ## 2022
 
+### DEC 20
+- add 1 talk
+- upgrade packages,config file
 ### NOV 14
 - tips
 
