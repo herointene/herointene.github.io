@@ -20,6 +20,10 @@ markdown_extensions:
   - meta
 ```
 
+!!! tips
+    2022年更新：現在不需要配置 `- meta`，可以直接在 markdown 上使用下述配置語句。
+
+
 meta data 有什麽用處呢？目前它可以通過在頁首添加如下代碼來隱藏左右兩邊的網頁目錄以及頁面内章節目錄：
 
 ```yaml
@@ -29,6 +33,18 @@ hide:
   - toc
 ---
 ```
+
+或者 tags：
+
+```yaml
+---
+tags:
+  - sharing
+  - python
+---
+```
+
+標簽 Tags 是 2022 年更新的功能，請查看[官網文檔](https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/?h=tags)設置。
 
 ### HTML 與 CSS
 
@@ -107,7 +123,7 @@ hide:
 
 ### 小技巧
 
-在我 [TapWater](..\poems\preface.md) 欄目裏，我運用了大量的空行。但在 md 格式裏，多餘的空行轉譯的時候會被自動忽略的。如何優雅地解決呢？
+在我 [TapWater](../poems/preface.md) 欄目裏，我運用了大量的空行。但在 md 格式裏，多餘的空行轉譯的時候會被自動忽略的。如何優雅地解決呢？
 
 。。。
 <br>
