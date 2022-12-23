@@ -1576,6 +1576,10 @@
 <div class="highlight"><pre><span></span><code><span class="nt">markdown_extensions</span><span class="p">:</span><span class="w"></span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">meta</span><span class="w"></span>
 </code></pre></div>
+<div class="admonition tips">
+<p class="admonition-title">Tips</p>
+<p>2022年更新：現在不需要配置 <code>- meta</code>，可以直接在 markdown 上使用下述配置語句。</p>
+</div>
 <p>meta data 有什麽用處呢？目前它可以通過在頁首添加如下代碼來隱藏左右兩邊的網頁目錄以及頁面内章節目錄：</p>
 <div class="highlight"><pre><span></span><code><span class="nn">---</span><span class="w"></span>
 <span class="nt">hide</span><span class="p">:</span><span class="w"></span>
@@ -1583,6 +1587,14 @@
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">toc</span><span class="w"></span>
 <span class="nn">---</span><span class="w"></span>
 </code></pre></div>
+<p>或者 tags：</p>
+<div class="highlight"><pre><span></span><code><span class="nn">---</span><span class="w"></span>
+<span class="nt">tags</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">sharing</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">python</span><span class="w"></span>
+<span class="nn">---</span><span class="w"></span>
+</code></pre></div>
+<p>標簽 Tags 是 2022 年更新的功能，請查看<a href="https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/?h=tags">官網文檔</a>設置。</p>
 <h3 id="html-css">HTML 與 CSS</h3>
 <p>接下來便可以使用 HTML 于正文内。請注意，雖然 CSS 可以放在 HTML 裏，但强烈建議在 mkdocs 教學文檔所説的那樣，另開一個 <code>extra.css</code> 。因爲這樣網頁可以一開始一次性讀取所有 CSS，在點開其他頁面的時候有更快的讀取速度而不會逐條讀取 CSS 内容。</p>
 <p>例如我在下方加上一個黑色框框：</p>
@@ -1651,7 +1663,7 @@
 </code></pre></div>
 <p>好了，停下循環！</p>
 <h3 id="_2">小技巧</h3>
-<p>在我 <a href="..\poems\preface.md">TapWater</a> 欄目裏，我運用了大量的空行。但在 md 格式裏，多餘的空行轉譯的時候會被自動忽略的。如何優雅地解決呢？</p>
+<p>在我 <a href="../../poems/preface/">TapWater</a> 欄目裏，我運用了大量的空行。但在 md 格式裏，多餘的空行轉譯的時候會被自動忽略的。如何優雅地解決呢？</p>
 <p>。。。
 <br>
 <br>
