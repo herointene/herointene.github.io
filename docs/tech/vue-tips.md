@@ -114,3 +114,14 @@ const theme = reactive({
 })
 
 ```
+
+### 3. 安裝 SASS/SCSS 預載
+
+在 vite 脚手架中，用以下代碼安裝
+
+```shell
+
+# .scss and .sass
+npm add -D sass
+
+```
