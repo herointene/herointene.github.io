@@ -6,7 +6,10 @@ hide:
 # websitelog
 
 my site prgress of each working day
+## 2023
 
+### JAN 14
+- add 2 tech, 1 talk
 ## 2022
 
 ### DEC 20

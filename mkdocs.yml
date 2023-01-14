@@ -13,6 +13,8 @@ nav:
   - Home: index.md
   - 丨: mis/blankpage.md
   - Tech Talk:
+      Preface: 
+        Projects Gallery: tech/projects.md
       Mkdocs網站搭建:
         Mkdocs快速概覽 & 簡介: tech/mkdocsbuild.md
         1.1 用Markdown寫文章: tech/md-guide.md
@@ -31,6 +33,7 @@ nav:
         循環裏匹配不同樣式: tech/vue-setstyleinloop.md
         組件間的數據傳輸: tech/vue-delivermethods.md
         编辑功能的实现: tech/vue-edit-function.md
+        表格分頁功能: tech/paginate-table-vue.md
       突發奇想:
         語音助手與天氣: tech/analytics-weather.md
   - Tap Water:
@@ -67,6 +70,7 @@ nav:
       電子湯圓: talk/digital-sweetdumpling.md
       2021之總結: talk/2021-conclusion.md
       構建自己的知識集散點: talk/knowledge-collection.md
+      2022之總結: talk/2022-conclusion.md
 
 
   - About: about.md
