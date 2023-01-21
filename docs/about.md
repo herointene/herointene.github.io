@@ -53,7 +53,7 @@ hide:
 
 [^1]: 關於數據分析，我常用的技術與工具為 Python、Charles、MySQL & MongoDB、Tableau & PowerBI。
 
-[^2]: 軟件軟件工程，我常用的語言與框架為 Python、Javascript、TypeScript、VUE.js。
+[^2]: 軟件軟件工程，我常用的語言與框架為 Python、Flask、Javascript、TypeScript、VUE.js。
 
 
 
