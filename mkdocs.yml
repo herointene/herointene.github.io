@@ -13,64 +13,64 @@ nav:
   - Home: index.md
   - 丨: mis/blankpage.md
   - Tech Talk:
-      Preface: 
-        Projects Gallery: tech/projects.md
-      Mkdocs網站搭建:
-        Mkdocs快速概覽 & 簡介: tech/mkdocsbuild.md
-        1.1 用Markdown寫文章: tech/md-guide.md
-        1.2 HTML in Mkdocs: tech/mkdocs-html.md
-        1.3 Mkdocs混合頁面: tech/mixedmkdocs.md
-        1.4 導航欄設置心得: tech/mkdocs-nav.md
-        2.1 Python與Mkdocs安裝: tech/mkdocs-python-install.md
-        Mkdocs漢語字體: tech/chnfonts.md
-      爬行動物:
-        爬取steam游戲榜單: tech/steam-crawling-python.md
-        爬取校招網招聘信息: tech/recruitment2021-crawling-python.md
-        爬取豆瓣帖子: tech/douban-crawling-python.md 
-        爬取Covid個案數據: tech/covidhk-crawling-python.md 
-      表面功夫: 
-        開發心得: tech/vue-tips.md
-        循環裏匹配不同樣式: tech/vue-setstyleinloop.md
-        組件間的數據傳輸: tech/vue-delivermethods.md
-        编辑功能的实现: tech/vue-edit-function.md
-        表格分頁功能: tech/paginate-table-vue.md
-      突發奇想:
-        語音助手與天氣: tech/analytics-weather.md
+      - Preface: 
+        - Projects Gallery: tech/projects.md
+      - Mkdocs網站搭建:
+          - Mkdocs快速概覽 & 簡介: tech/mkdocsbuild.md
+          - 1.1 用Markdown寫文章: tech/md-guide.md
+          - 1.2 HTML in Mkdocs: tech/mkdocs-html.md
+          - 1.3 Mkdocs混合頁面: tech/mixedmkdocs.md
+          - 1.4 導航欄設置心得: tech/mkdocs-nav.md
+          - 2.1 Python與Mkdocs安裝: tech/mkdocs-python-install.md
+          - Mkdocs漢語字體: tech/chnfonts.md
+      - 爬行動物:
+          - 爬取steam游戲榜單: tech/steam-crawling-python.md
+          - 爬取校招網招聘信息: tech/recruitment2021-crawling-python.md
+          - 爬取豆瓣帖子: tech/douban-crawling-python.md 
+          - 爬取Covid個案數據: tech/covidhk-crawling-python.md 
+      - 表面功夫: 
+          - 開發心得: tech/vue-tips.md
+          - 循環裏匹配不同樣式: tech/vue-setstyleinloop.md
+          - 組件間的數據傳輸: tech/vue-delivermethods.md
+          - 编辑功能的实现: tech/vue-edit-function.md
+          - 表格分頁功能: tech/paginate-table-vue.md
+      - 突發奇想:
+          - 語音助手與天氣: tech/analytics-weather.md
   - Tap Water:
-      Preface: 
-        Preface: poems/preface.md
-      Chapter I: 
-        再來七杯自來水: poems/ch1/tap-water.md
-        Celeste: poems/ch1/celeste.md
-        魚腸: poems/ch1/fishsausage.md
-        袁鳳嵐: poems/ch1/sierrablue.md
-      Chapter IV:
-        和歌山之旅: poems/ch4/trip-of-wakayama.md
-        奧克蘭的初夏: poems/ch4/trip-of-auckland.md
-        Wu Kai Sha: poems/ch4/wukaisha.md 
-        巷: poems/ch4/the-path.md 
-        成都的四日三夜: poems/ch4/trip-of-chengdu.md
-      Chapter V:
-        詩生活: poems/ch5/poemoflife.md
-        翻頁: poems/ch5/turnpage.md
-      Chapter VI:
-        音符: poems/ch6/note.md
-        宇宙飛船: poems/ch6/spaceship.md
-        明天: poems/ch6/tomorrow.md
-        Untitled: poems/ch6/Untitled.md
-        豉油的初衷: poems/ch6/soysauce.md
-      Chapter VII:
-        緊急想念: poems/ch7/urgently-miss.md
-        不可抗力: poems/ch7/force-majeure.md
+      - Preface: 
+          - Preface: poems/preface.md
+      - Chapter I: 
+          - 再來七杯自來水: poems/ch1/tap-water.md
+          - Celeste: poems/ch1/celeste.md
+          - 魚腸: poems/ch1/fishsausage.md
+          - 袁鳳嵐: poems/ch1/sierrablue.md
+      - Chapter IV:
+          - 和歌山之旅: poems/ch4/trip-of-wakayama.md
+          - 奧克蘭的初夏: poems/ch4/trip-of-auckland.md
+          - Wu Kai Sha: poems/ch4/wukaisha.md 
+          - 巷: poems/ch4/the-path.md 
+          - 成都的四日三夜: poems/ch4/trip-of-chengdu.md
+      - Chapter V:
+          - 詩生活: poems/ch5/poemoflife.md
+          - 翻頁: poems/ch5/turnpage.md
+      - Chapter VI:
+          - 音符: poems/ch6/note.md
+          - 宇宙飛船: poems/ch6/spaceship.md
+          - 明天: poems/ch6/tomorrow.md
+          - Untitled: poems/ch6/Untitled.md
+          - 豉油的初衷: poems/ch6/soysauce.md
+      - Chapter VII:
+          - 緊急想念: poems/ch7/urgently-miss.md
+          - 不可抗力: poems/ch7/force-majeure.md
   - mini Ted Talk:
-      關於選擇: talk/about-life-choices.md
-      向流星許願: talk/grant-wishes.md
-      狩月人: talk/moon-hunter.md
-      緊急維修: talk/urgent-repaired.md
-      電子湯圓: talk/digital-sweetdumpling.md
-      2021之總結: talk/2021-conclusion.md
-      構建自己的知識集散點: talk/knowledge-collection.md
-      2022之總結: talk/2022-conclusion.md
+      - 關於選擇: talk/about-life-choices.md
+      - 向流星許願: talk/grant-wishes.md
+      - 狩月人: talk/moon-hunter.md
+      - 緊急維修: talk/urgent-repaired.md
+      - 電子湯圓: talk/digital-sweetdumpling.md
+      - 2021之總結: talk/2021-conclusion.md
+      - 構建自己的知識集散點: talk/knowledge-collection.md
+      - 2022之總結: talk/2022-conclusion.md
 
 
   - About: about.md
