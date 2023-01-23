@@ -54,6 +54,8 @@ hide:
 
 [^2]: 軟件軟件工程，我常用的語言與框架為 Python、Flask、Javascript、TypeScript、VUE.js。
 
+音樂工程方面，我用 Ableton 與 Garageband 作曲，取決於項目大小我用不同軟件進行商業創作。
+
 如果需要幫手的話敬請點擊頁尾的紙飛機 ✈ 圖標向我發送 Email。
 
 
