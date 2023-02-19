@@ -143,6 +143,9 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/herointene
       name: Github
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/wyndkatbcis
+      name: Twitter
     - icon: fontawesome/brands/instagram
       link: https://www.instagram.com/tedilitarianism/
       name: Instagram
@@ -150,7 +153,7 @@ extra:
       link: https://soundcloud.com/wulited
       name: SoundCloud
     - icon: fontawesome/solid/paper-plane
-      link: mailto:<wulited@outlook.com>
+      link: mailto:<ted@ewig.dev>
       name: Email me
   analytics:
     provider: google
