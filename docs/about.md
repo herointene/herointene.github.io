@@ -13,7 +13,6 @@ hide:
 
 <br>
 
-<img src="../assets/avatar.jpg" alt="Avatar" class="avatar">
 
 <br>
 
@@ -46,6 +45,8 @@ hide:
 商業方面，我可以完成市場研究、商務與競爭分析、平臺運營與策略、Content Marketing、Retail Marketing等。
 
 數據方面，我會業務數據分析，簡單的機器學習分類與預測；數據抓取與爬蟲；數據可視化，我擅長 Dashboard 美化以及數據加載流程優化。[^1]
+
+以上內容歡迎免費諮詢，
 
 [^1]: 關於數據分析，我常用的技術與工具為 Python、Charles、MySQL & MongoDB、Tableau & PowerBI。
 
