@@ -40,6 +40,6 @@ hide:
 <div class="jumbotron"></div>
 <div class="index">
   <h1>See My Projects Gallery</h1>
-  <a href="./tech/projects">Project Gallery</a>
+  <a target="_blank" href="https://wulited.netlify.app/#/about">Project Gallery</a>
 </div>
 <div class="jumbotron"></div>

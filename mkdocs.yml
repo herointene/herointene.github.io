@@ -12,7 +12,6 @@ copyright: Copyright &copy; 2021-2023 TingZaiZuk
 nav:
   - Home: index.md
   - 丨: mis/blankpage.md
-  - Projects Gallery: tech/projects.md
   - Tech Talk: 
       - Mkdocs網站搭建:
           - Mkdocs快速概覽 & 簡介: tech/mkdocsbuild.md
