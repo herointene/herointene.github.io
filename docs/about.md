@@ -16,8 +16,9 @@ hide:
 
 <br>
 
-我在香港與深圳長大，還在臺北、上海工作生活過。目前我在東京，學習日語的同時努力提升自己。我喜歡音樂與文學藝術，喜歡編曲與隨便寫一些小文章。
+我在香港與深圳長大，還在臺北、上海工作生活過。目前我在東京某大手IT做軟體工程師。我喜歡音樂與文學藝術，喜歡編曲與隨便寫一些小文章。
 
+全職工作的同時，也有自己的小型工作室，與志同道合的朋友們為 DX/視覺營銷/音樂 的行業添加一些年輕活力。
 
 ### 我力所能及的
 
@@ -50,10 +51,9 @@ hide:
 
 [^1]: 關於數據分析，我常用的技術與工具為 Python、Charles、MySQL & MongoDB、Tableau & PowerBI。
 
-軟件工程方面，web 全棧開發是目前學習的主要内容。[^2]
-請閲讀 [Projects Gallery](./tech/projects.md)
+軟件工程方面，web 全棧開發是目前學習的主要内容。我有用AWS與Azure搭建架構的經驗，但不多。[^2]
 
-[^2]: 軟件軟件工程，我常用的語言與框架為 Python、Flask、Javascript、TypeScript、VUE.js。
+[^2]: 軟件軟件工程，我常用的技術為 Python、Flask、Javascript、TypeScript、VUE.js、SQL。
 
 音樂工程方面，我用 Ableton 與 Garageband 作曲，取決於項目大小我用不同軟件進行商業創作。
 

@@ -152,7 +152,7 @@ extra:
       link: https://soundcloud.com/wulited
       name: SoundCloud
     - icon: fontawesome/solid/paper-plane
-      link: mailto:<ted@ewig.dev>
+      link: mailto:<x@wulited.com>
       name: Email me
   analytics:
     provider: google
