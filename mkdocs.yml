@@ -42,6 +42,7 @@ nav:
           - Celeste: poems/ch1/celeste.md
           - 魚腸: poems/ch1/fishsausage.md
           - 袁鳳嵐: poems/ch1/sierrablue.md
+          - 隔空傳物: poems/ch1/telekinesis.md
       - Chapter IV:
           - 和歌山之旅: poems/ch4/trip-of-wakayama.md
           - 奧克蘭的初夏: poems/ch4/trip-of-auckland.md
@@ -70,6 +71,8 @@ nav:
       - 構建自己的知識集散點: talk/knowledge-collection.md
       - 2022之總結: talk/2022-conclusion.md
       - 2023之總結: talk/2023-conclusion.md
+      - 粽子: talk/zongzi.md
+      - ChatGPT賜予我芳名: talk/gpt-naming.md
 
 
   - About: about.md
