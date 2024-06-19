@@ -1,4 +1,4 @@
-# Copyright (c) 2021-2023 Ted WU <wulited@outlook.com>
+# Copyright (c) 2021-2024 Ted WU <wulited@outlook.com>
 
 site_name: 艇仔粥 TingZaiZuk
 site_url: https://herointene.github.io
@@ -7,7 +7,7 @@ site_description: >-
   Personal website introduced technical skills
   sharing / personal portfolio / articles / music .etc
 
-copyright: Copyright &copy; 2021-2023 TingZaiZuk
+copyright: Copyright &copy; 2021-2024 TingZaiZuk
 
 nav:
   - Home: index.md
