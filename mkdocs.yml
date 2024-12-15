@@ -34,6 +34,7 @@ nav:
           - 表格分頁功能: tech/paginate-table-vue.md
       - 突發奇想:
           - 語音助手與天氣: tech/analytics-weather.md
+          - 構建自己的知識集散點: tech/knowledge-collection.md
   - Tap Water:
       - Preface: 
           - Preface: poems/preface.md
@@ -49,15 +50,19 @@ nav:
           - Wu Kai Sha: poems/ch4/wukaisha.md 
           - 巷: poems/ch4/the-path.md 
           - 成都的四日三夜: poems/ch4/trip-of-chengdu.md
+          - 染色的楓葉: poems/ch4/dye-maple.md
+          - 渡月: poems/ch4/togetsu.md
       - Chapter V:
           - 詩生活: poems/ch5/poemoflife.md
           - 翻頁: poems/ch5/turnpage.md
+          - 自製杯麵: poems/ch5/cupnoodles.md
       - Chapter VI:
           - 音符: poems/ch6/note.md
           - 宇宙飛船: poems/ch6/spaceship.md
           - 明天: poems/ch6/tomorrow.md
           - Untitled: poems/ch6/Untitled.md
           - 豉油的初衷: poems/ch6/soysauce.md
+          - 皎潔啊: poems/ch6/moony.md
       - Chapter VII:
           - 緊急想念: poems/ch7/urgently-miss.md
           - 不可抗力: poems/ch7/force-majeure.md
@@ -67,12 +72,12 @@ nav:
       - 狩月人: talk/moon-hunter.md
       - 緊急維修: talk/urgent-repaired.md
       - 電子湯圓: talk/digital-sweetdumpling.md
-      - 2021之總結: talk/2021-conclusion.md
-      - 構建自己的知識集散點: talk/knowledge-collection.md
-      - 2022之總結: talk/2022-conclusion.md
-      - 2023之總結: talk/2023-conclusion.md
       - 粽子: talk/zongzi.md
       - ChatGPT賜予我芳名: talk/gpt-naming.md
+      - 年度總結:
+        - 2021:米綫、時空飛船: talk/2021-conclusion.md
+        - 2022:二叠紀的風鈴聲: talk/2022-conclusion.md
+        - 2023:過山車的測速儀: talk/2023-conclusion.md
 
 
   - About: about.md
@@ -161,6 +166,19 @@ extra:
   analytics:
     provider: google
     property: G-NSSC5W311R
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+            Thanks for your feedback!
 extra_css:
   - stylesheets/extra.css
 extra_javascript:
