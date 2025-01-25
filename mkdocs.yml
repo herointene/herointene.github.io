@@ -39,12 +39,15 @@ nav:
       - Preface: 
           - Preface: poems/preface.md
       - Chapter I: 
+      # objects that i really want
           - 再來七杯自來水: poems/ch1/tap-water.md
           - Celeste: poems/ch1/celeste.md
           - 魚腸: poems/ch1/fishsausage.md
+          - 翻頁: poems/ch1/turnpage.md
           - 袁鳳嵐: poems/ch1/sierrablue.md
           - 隔空傳物: poems/ch1/telekinesis.md
       - Chapter IV:
+      # travels
           - 和歌山之旅: poems/ch4/trip-of-wakayama.md
           - 奧克蘭的初夏: poems/ch4/trip-of-auckland.md
           - Wu Kai Sha: poems/ch4/wukaisha.md 
@@ -53,19 +56,24 @@ nav:
           - 染色的楓葉: poems/ch4/dye-maple.md
           - 渡月: poems/ch4/togetsu.md
       - Chapter V:
-          - 詩生活: poems/ch5/poemoflife.md
-          - 翻頁: poems/ch5/turnpage.md
+      # life, object metaphor
+          - 失眠: poems/ch5/insomnia.md
           - 自製杯麵: poems/ch5/cupnoodles.md
+          - 音符: poems/ch5/note.md
+          - 豉油的初衷: poems/ch5/soysauce.md
+          - 宇宙飛船: poems/ch5/spaceship.md
       - Chapter VI:
-          - 音符: poems/ch6/note.md
-          - 宇宙飛船: poems/ch6/spaceship.md
+      # life and death, news based
+          - 詩生活: poems/ch6/poemoflife.md
+          - 蜿蜒大海: poems/ch6/winding-sea.md
           - 明天: poems/ch6/tomorrow.md
           - Untitled: poems/ch6/Untitled.md
-          - 豉油的初衷: poems/ch6/soysauce.md
           - 皎潔啊: poems/ch6/moony.md
+          - 夏日: poems/ch6/summer.md
       - Chapter VII:
-          - 緊急想念: poems/ch7/urgently-miss.md
+      # poem-like, ending
           - 不可抗力: poems/ch7/force-majeure.md
+          - 緊急想念: poems/ch7/urgently-miss.md
   - mini Ted Talk:
       - 關於選擇: talk/about-life-choices.md
       - 向流星許願: talk/grant-wishes.md
@@ -148,14 +156,12 @@ plugins:
 
 
 extra:
+  generator: false
   homepage: https://herointene.github.io
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/herointene
       name: Github
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/wyndkatbcis
-      name: Twitter
     - icon: fontawesome/brands/instagram
       link: https://www.instagram.com/tedilitarianism/
       name: Instagram

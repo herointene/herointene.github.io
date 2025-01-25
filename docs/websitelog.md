@@ -6,6 +6,8 @@ hide:
 # websitelog
 
 my site prgress of each working day
+unused from 2023. Because no more UI upgrade that is important to leave here.
+
 ## 2023
 
 ### JAN 14

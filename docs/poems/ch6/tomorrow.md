@@ -49,3 +49,5 @@
 ---
 
 2021.11.23
+
+> https://www.cnn.co.jp/world/35178248.html
