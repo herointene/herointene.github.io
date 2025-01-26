@@ -83,7 +83,7 @@ nav:
       - 電子湯圓: talk/digital-sweetdumpling.md
       - 粽子: talk/zongzi.md
       - ChatGPT賜予我芳名: talk/gpt-naming.md
-      - 乙貓: talk/cat-beta.md
+      # - 乙貓: talk/cat-beta.md #I think its not proper
       - 年度總結:
         - 2019:下一盤手撕鷄見: talk/2019-conclusion.md
         - 2021:米綫、時空飛船: talk/2021-conclusion.md
