@@ -6,7 +6,7 @@
 
 有任何錯誤或者疑問請隨時電郵告知筆者：<br>
 
-[Email Me :fontawesome-solid-paper-plane:](mailto:<wulited@outlook.com>){ .md-button }
+[Email Me :fontawesome-solid-paper-plane:](mailto:<x@wulited.com>){ .md-button }
 
 ---
 
