@@ -5,6 +5,11 @@
   --md-footer-bg-color: hsla(199.53, 18.30%, 46.08%, 0.5);
 }
 
+/* Match the original page width instead of reserving Zensical's new gutter. */
+html {
+  scrollbar-gutter: auto;
+}
+
 /* ScrollBar: */
 /* Works on Firefox */
 * {
@@ -30,7 +35,44 @@
   white-space: nowrap;
 }
 
+/* The classic header reserves a repository slot even when no link is set. */
+.md-header__source:not(:has(.md-source)) {
+  display: none;
+}
+
+/* Keep the original header geometry while opening Zensical's new search dialog. */
+@media screen and (min-width: 60em) {
+  .md-search {
+    padding: .3rem 0;
+  }
+
+  .md-search__button {
+    width: 11.7rem;
+    height: 1.8rem;
+    font-size: .8rem;
+    border-radius: .1rem;
+  }
+}
+
 /* HOME PAGE________HOME PAGE */
+/* Preserve the full-width homepage without injecting global styles at runtime. */
+body:has(.titlecard) .md-main__inner {
+  margin-top: 0;
+}
+
+body:has(.titlecard) main > .md-grid {
+  max-width: none;
+}
+
+body:has(.titlecard) .md-content__inner {
+  margin: 0;
+  padding-top: 0;
+}
+
+body:has(.titlecard) .md-content__inner:before {
+  height: 0;
+}
+
 /* HomePage Title */
 .titlecard {
   position: relative;

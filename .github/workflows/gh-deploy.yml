@@ -1,22 +1,89 @@
-name: gh-deploy
+name: Build and publish site
 
 on:
   push:
-    branches:
-      - master
+    branches: [master]
+  pull_request:
+    branches: [master]
+  workflow_dispatch:
+    inputs:
+      generator:
+        description: Build the migrated site, or restore the pre-migration site
+        type: choice
+        options: [zensical, mkdocs-rollback]
+        default: zensical
+      deploy:
+        description: Publish the validated artifact to GitHub Pages
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-${{ github.event_name == 'pull_request' && github.ref || 'production' }}
+  cancel-in-progress: false
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           fetch-depth: 0
-      - uses: actions/setup-python@v2
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
-          python-version: 3.x
-      - run: pip install mkdocs-material 
+          python-version: '3.12.14'
+      - name: Install validated dependencies
+        env:
+          GENERATOR: ${{ inputs.generator || 'zensical' }}
+        run: |
+          if [ "$GENERATOR" = "mkdocs-rollback" ]; then
+            python -m pip install -r requirements-rollback.txt
+          else
+            python -m pip install -r requirements-qa.txt
+          fi
+      - name: Build Zensical and check all published files
+        if: inputs.generator != 'mkdocs-rollback'
+        run: |
+          zensical build --clean --strict
+          python scripts/check_site.py
+      - name: Build the preserved MkDocs version with the draft excluded
+        if: inputs.generator == 'mkdocs-rollback'
+        run: python scripts/build_rollback.py
+      - name: Install Chromium
+        if: inputs.generator != 'mkdocs-rollback'
+        run: python -m playwright install --with-deps chromium
+      - name: Exercise the candidate site in a browser
+        if: inputs.generator != 'mkdocs-rollback'
+        run: python scripts/check_browser.py
+      - name: Save the candidate and verification evidence
+        if: success()
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6
+        with:
+          name: site-candidate-${{ github.run_id }}
+          path: |
+            site/
+            test-results/
+          retention-days: 14
+      - name: Prepare the Pages artifact
+        if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.deploy)
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          path: site
 
-
-
-      - run: mkdocs gh-deploy --force
+  deploy:
+    needs: build
+    if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.deploy)
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
+      - name: Publish the validated artifact
+        id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1

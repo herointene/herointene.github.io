@@ -7,7 +7,11 @@ site_description: >-
   Personal website introduced technical skills
   sharing / personal portfolio / articles / music .etc
 
-copyright: Copyright &copy; 2021-2025 TingZaiZuk(site), 2014-2025 TingZaiZuk(contents)
+copyright: Copyright &copy; 2021-2026 TingZaiZuk(site), 2014-2026 TingZaiZuk(contents)
+
+# Keep the draft in the repository, but never publish its page or search entry.
+exclude_docs: |
+  /talk/cat-beta.md
 
 nav:
   - Home: index.md
@@ -102,6 +106,7 @@ nav:
 
 theme:
   name: material
+  variant: classic
   custom_dir: overrides
   favicon: assets/logo.png
   logo: assets/logo.png
@@ -145,8 +150,11 @@ markdown_extensions:
   # - meta
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -163,6 +171,7 @@ plugins:
 
 extra:
   generator: false
+  tag_manager: GTM-PPTZT5H
   homepage: https://herointene.github.io
   social:
     - icon: fontawesome/brands/github

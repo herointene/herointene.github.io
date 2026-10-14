@@ -1,18 +1,48 @@
 {% extends "base.html" %}
 
+{% block htmltitle %}
+  {% if page.url == "" or page.url == "." %}
+    <title>{{ config.site_name }}</title>
+  {% else %}
+    {{ super() }}
+  {% endif %}
+{% endblock %}
 
 
 {% block analytics %}
+  {% if config.extra.analytics %}
+    <script id="__analytics" data-property="{{ config.extra.analytics.property }}">
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
+      gtag("js", new Date());
+      gtag("config", {{ config.extra.analytics.property | tojson }});
 
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-PPTZT5H');</script>
-<!-- End Google Tag Manager -->
+      // Preview builds must not send visits to the production analytics account.
+      if ([new URL({{ config.site_url | tojson }}).hostname,
+           new URL({{ config.extra.homepage | tojson }}).hostname].includes(location.hostname)) {
+        const analytics = document.createElement("script");
+        analytics.async = true;
+        analytics.src = "https://www.googletagmanager.com/gtag/js?id=" +
+          encodeURIComponent({{ config.extra.analytics.property | tojson }});
+        document.head.appendChild(analytics);
 
-<script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-NSSC5W311R"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&gtag("event","search",{search_term:this.value})}),"undefined"!=typeof location$&&location$.subscribe(function(e){gtag("config","G-NSSC5W311R",{page_path:e.pathname})})})</script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NSSC5W311R"></script>
+        {% if config.extra.tag_manager %}
+          window.dataLayer.push({ "gtm.start": Date.now(), event: "gtm.js" });
+          const tagManager = document.createElement("script");
+          tagManager.async = true;
+          tagManager.src = "https://www.googletagmanager.com/gtm.js?id=" +
+            encodeURIComponent({{ config.extra.tag_manager | tojson }});
+          document.head.appendChild(tagManager);
+        {% endif %}
+      }
+    </script>
+  {% endif %}
+{% endblock %}
 
+{% block header %}
+  {% if config.extra.tag_manager %}
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ config.extra.tag_manager }}"
+      height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe></noscript>
+  {% endif %}
+  {{ super() }}
 {% endblock %}

@@ -2,33 +2,8 @@
 hide:
   - navigation
   - toc
+  - feedback
 ---
-<script>
-  // change index style: full page
-
-  let styleElem = document.head.appendChild(document.createElement("style"));
-  styleElem.innerHTML = `
-    .md-main__inner {
-      margin-top: 0;
-      backgroud: white;
-    }
-  
-    main> .md-grid {
-      max-width: none;
-    }
-    .md-content__inner {
-      margin: 0;
-      padding-top: 0;
-    }
-    .md-content__inner:before {
-      height: 0;
-    }
-
-  
-  `
-
-  
-</script>
 #
 <h1 style="display:none">TingZaiZuk - 艇仔粥</h1>
 <div class="titlecard">

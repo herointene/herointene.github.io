@@ -1,0 +1,12 @@
+# Validated Zensical build environment. Upgrade only after migration checks pass.
+zensical==0.0.70
+click==8.5.0
+deepmerge==3.0.1
+Jinja2==3.1.6
+MarkupSafe==3.0.4
+Markdown==3.11.1
+pathspec==1.1.1
+Pygments==2.21.0
+pymdown-extensions==12.2
+PyYAML==6.0.3
+tomli==2.5.0
